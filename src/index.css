@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("../src/assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Monserrat";
+  background: linear-gradient(#06110e, #0a1b16);
+}
+
+:root {
+  --background: #0a1b16;
+
+  --primary-50: #cbfff0;
+  --primary-100: #9effe3;
+  --primary-200: #5ae8c0;
+  --primary-250: #44d4ab;
+  --primary-300: #35bc96;
+  --primary-400: #2ea281;
+  --primary-500: #1c9976;
+  --primary-600: #0e7155;
+  --primary-700: #093a2c;
+  --primary-800: #09271e;
+  --primary-900: #0b231c;
+
+  --secundary-50: #333;
+  --secundary-100: #333;
+  --secundary-200: #333;
+  --secundary-300: #333;
+  --secundary-400: #333;
+  --secundary-500: #333;
+}
+
+/* animations */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: #093a2c;
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5ae8c0;
+  border-radius: 20px;
+  border: 3.2px solid #093a2c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2ea281;
+}
+
+@keyframes glow {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 1200%;
+  }
+}
+
+.animate-chroma {
+  background: linear-gradient(
+    to left,
+    #ff4bae,
+    #ff80d9,
+    #3da4ca,
+    #10cad9,
+    #8a4bff,
+    #ff4bae
+  );
+  background-size: 1200%;
+}
+
+.animate-chroma:hover {
+  animation: gradient 30s linear infinite;
+  box-shadow: -5px 5px 20px #333;
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 1200%;
+  }
+}
+
+.section {
+  background-color: var(--primary-800);
+  width: max-content;
+  padding: 2em;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}
