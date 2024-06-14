@@ -8,11 +8,11 @@ export default function Heart_Checkbox() {
     >
       <input
         id="favorite"
-        className="peer absolute pointer-events-none opacity-0"
+        className="peer absolute appearance-none opacity-0"
         type="checkbox"
       />
       <svg
-        className="h-full w-full text-transparent duration-200 peer-checked:text-red-400 "
+        className="h-full w-full text-transparent duration-200 peer-checked:text-red-400"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         fill="currentColor"

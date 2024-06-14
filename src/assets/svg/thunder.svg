@@ -1,12 +1,4 @@
- <svg
-              viewBox="0 0 24 24"
-              className="absolute h-full fill-[#0a1b16] object-cover"
-            >
-              <title />
-              <g data-name="Layer 2" id="Layer_2">
-                <polygon
-                  points="21.59 8
-               15.87 8 19.87 2 7.32 2 2.52 14 8.61 14 5.84 22.31 21.59 8"
-                />
-              </g>
-            </svg>
+<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" stroke-width="1.5" stroke="#0b231c" fill="#0b231c" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>

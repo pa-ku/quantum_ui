@@ -4,13 +4,13 @@ import TextCheckbox from "../components/checkboxes/TextCheckbox";
 
 import ToggleBtn from "../components/checkboxes/ToggleBtn";
 import Heart_Checkbox from "../components/checkboxes/Heart_Checkbox";
-import More_Btn from "../components/buttons/More_Btn";
+import More_Checkbox from "../components/checkboxes/More_Checkbox";
 
 export default function CheckBoxes() {
   return (
     <>
       <section className="section">
-        <More_Btn />
+        <More_Checkbox />
       </section>
       <section className="section">
         <Heart_Checkbox />

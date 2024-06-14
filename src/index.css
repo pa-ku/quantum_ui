@@ -56,6 +56,8 @@ body {
 ::-webkit-scrollbar {
   background-color: #093a2c;
   width: 13px;
+  color: #bbf7d0;
+  color: #d1fae5;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #5ae8c0;
@@ -113,14 +115,22 @@ body {
 }
 
 .section {
-  background-color: var(--primary-800);
-  width: max-content;
-  padding: 2em;
-  border-radius: 20px;
+  position: relative;
+}
+
+.section::before {
+  position: absolute;
+  right: -60px;
+  top: 0px;
+  content: "🛠";
+  background-color: #0e7155;
+  padding: 0.5em;
+  height: 25px;
+  font-size: 18px;
   display: flex;
   align-items: center;
-  justify-content: start;
-  @media (max-width: 700px) {
-    width: 100%;
-  }
+  justify-content: center;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 50%;
 }
