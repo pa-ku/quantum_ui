@@ -9,6 +9,7 @@ import More_Checkbox from "../components/checkboxes/More_Checkbox";
 export default function CheckBoxes() {
   return (
     <>
+    <h2>CheckBoxes</h2>
       <section className="section">
         <More_Checkbox />
       </section>

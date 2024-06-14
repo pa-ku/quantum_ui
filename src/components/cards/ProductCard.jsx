@@ -16,7 +16,7 @@ export default function ProductCard() {
       <div className="rounded-b-xl bg-slate-700 p-2">
         <p className="text-xl">$100</p>
         <p className="text-blue-300 line-through">$50</p>
-        <h2 className="font-bold text-slate-200">Segway Ninebot Gt2</h2>
+        <h3 className="font-bold text-slate-200">Segway Ninebot Gt2</h3>
       </div>
     </div>
   );

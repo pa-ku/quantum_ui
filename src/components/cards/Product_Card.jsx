@@ -8,9 +8,9 @@ export default function Product_Card() {
         alt=""
       />
       <div className="p-4">
-        <h2 className="text-xl font-bold uppercase text-blue-400">
+        <h3 className="text-xl font-bold uppercase text-blue-400">
           Bariloche
-        </h2>
+        </h3>
         <p className="text-white">
           Una vista maravillosa desde el cerro campanario
         </p>

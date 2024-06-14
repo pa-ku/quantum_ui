@@ -6,7 +6,7 @@ import thunder from "../assets/svg/thunder.svg";
 export default function Home() {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center gap-20 px-4 md:w-[42em]">
+      <main className=" flex w-full flex-col items-center justify-center gap-20 px-4 md:w-[42em]">
         <Banner />
         {/* <LastAdded /> */}
         <Bento />
@@ -19,7 +19,7 @@ export default function Home() {
 function Bento() {
   return (
     <>
-      <section className="flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 md:w-[40em]">
+      <section className=" flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 md:w-[40em]">
         <div className="bg- relative row-span-2 flex flex-col items-center justify-center rounded-md bg-[#0a1b16] p-2 text-center">
           <p className="z-10 text-3xl text-emerald-100">
             <span className="font-bold"> Copy once </span>use everywhere
@@ -46,7 +46,7 @@ function Bento() {
 function Banner() {
   return (
     <>
-      <h1 className="flex h-40 w-full items-center justify-center bg-gradient-to-t from-gray-400 to-white bg-clip-text text-center text-7xl tracking-tight text-transparent">
+      <h1 className="animate-opacity flex h-40 w-full items-center justify-center bg-gradient-to-t from-gray-400 to-white bg-clip-text text-center text-7xl tracking-tight text-transparent">
         Design made real
       </h1>
     </>
@@ -74,7 +74,7 @@ function HowTo() {
   return (
     <>
       <section className="gap flex w-full flex-col items-start gap-10">
-        <h2 className="w-full text-center text-4xl">How to use it?</h2>
+        <h2>How to use it?</h2>
         <div className="space-y-4">
           <p>1. Find the component you want</p>
           <span className="flex items-center gap-2">

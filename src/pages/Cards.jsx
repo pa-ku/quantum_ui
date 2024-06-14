@@ -5,6 +5,7 @@ import Card_1 from "../components/cards/Product_Card";
 export default function Cards() {
   return (
     <>
+    <h2>Cards</h2>
       <section className="section">
         <ProductCard />
       </section>
