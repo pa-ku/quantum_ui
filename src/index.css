@@ -118,22 +118,6 @@ body {
   position: relative;
 }
 
-.section::before {
-  position: absolute;
-  right: -60px;
-  top: 0px;
-  content: "🛠";
-  background-color: #0e7155;
-  padding: 0.5em;
-  height: 25px;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  cursor: pointer;
-  border-radius: 50%;
-}
 
 h2 {
   @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl text-transparent;
@@ -146,4 +130,16 @@ h2 {
   to {
     opacity: 1;
   }
+}
+
+.wrapper {
+  @apply flex w-full flex-col items-start justify-start gap-20 text-start;
+}
+
+.title {
+  @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-start text-4xl font-bold text-transparent;
+}
+
+.container {
+  @apply flex flex-col gap-10;
 }
