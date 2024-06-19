@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function NavBar({ openSideBar }) {
   return (
     <>
-      <nav className=" flex h-16 w-full items-center justify-between gap-8 px-4 text-lg font-bold text-white md:justify-center">
+      <nav className="flex h-16 w-full items-center justify-between gap-8 px-4 text-lg font-bold text-white md:justify-center">
         <div className="flex items-center justify-center gap-6">
           <button
             className="h-10 w-10 text-white hover:scale-110 md:hidden"
@@ -16,19 +16,12 @@ export default function NavBar({ openSideBar }) {
 
           <Link
             to={"/"}
-            className="flex h-6 items-center justify-center gap-2 hover:text-green-300"
+            className="flex h-6 items-center justify-center gap-2 hover:text-primary-100"
           >
             <img className="h7 w-10" src={quantumLogo} alt="" />
             Quantum
           </Link>
         </div>
-        {/*   <span className="relative">
-          <img src={searchSvg} alt="" />
-          <input
-            type="text"
-            className="md:w-max w-full pl-8 bg-[var(--primary-700)] rounded-xl"
-          />
-        </span> */}
       </nav>
     </>
   );

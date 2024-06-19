@@ -1,6 +1,6 @@
 import React from "react";
-import ThemeCheckbox from "../components/checkboxes/ThemeCheckbox";
-import TextCheckbox from "../components/checkboxes/TextCheckbox";
+import ThemeCheckbox from "../components/checkboxes/Theme_Checkbox";
+import TextCheckbox from "../components/checkboxes/Active_Checkbox";
 
 import ToggleBtn from "../components/checkboxes/ToggleBtn";
 import Heart_Checkbox from "../components/checkboxes/Heart_Checkbox";

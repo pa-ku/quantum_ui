@@ -4,7 +4,7 @@ export default function SideBar({ sideBar }) {
   return (
     <>
       <aside
-        className={`${sideBar && "left-0"} items-star to-[var(--primary-600) md:rounded-non fixed -left-full top-20 z-50 flex h-svh w-52 flex-col gap-5 rounded-tr-lg bg-[var(--primary-700)] bg-gradient-to-tr from-[var(--primary-800)] px-2 py-5 text-lg text-white opacity-95 duration-300 md:sticky md:top-0 md:flex`}
+        className={`${sideBar && "left-0"} items-star to-[var(--primary-600) bg-primary-900 fixed -left-full top-20 z-50 flex h-svh w-52 flex-col gap-5 rounded-tr-lg px-2 py-5 text-lg text-white opacity-95 duration-300 md:sticky md:top-0 md:flex md:rounded-none`}
       >
         <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
 
@@ -25,7 +25,7 @@ function LinkComponent({ to, children }) {
         <Link
           to={to}
           defaultChecked={true}
-          className="flex w-full rounded-2xl px-4 py-1 duration-500 hover:bg-[var(--primary-600)]"
+          className="flex w-full rounded-2xl px-4 py-1 duration-500 hover:bg-primary-800"
         >
           {children}
         </Link>

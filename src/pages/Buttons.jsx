@@ -7,13 +7,13 @@ export default function Buttons() {
     <>
       <div className="wrapper">
         <ComponentTemplate
-          title={"Press"}
+          title={"Action"}
           text={"Simple button with interaction"}
         >
           <Button_1 />
         </ComponentTemplate>
         <ComponentTemplate
-          title={"Chroma Button"}
+          title={"Chroma"}
           text={"Needs the chroma keyframes to work"}
         >
           <ChromaBtn />

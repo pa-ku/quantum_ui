@@ -24,30 +24,43 @@
 body {
   background-color: var(--background);
   font-family: "Monserrat";
-  background: linear-gradient(#06110e, #0a1b16);
+  background-color: linear-gradient(to bottom "#fff", "#fff");
 }
 
 :root {
-  --background: #0a1b16;
+  --background: #091713;
 
-  --primary-50: #cbfff0;
-  --primary-100: #9effe3;
-  --primary-200: #5ae8c0;
-  --primary-250: #44d4ab;
-  --primary-300: #35bc96;
-  --primary-400: #2ea281;
+  --primary-100: #3ddbaf;
+  --primary-200: #28d7a6;
+  --primary-300: #24c295;
+  --primary-400: #20ac84;
   --primary-500: #1c9976;
-  --primary-600: #0e7155;
-  --primary-700: #093a2c;
-  --primary-800: #09271e;
-  --primary-900: #0b231c;
+  --primary-600: #188163;
+  --primary-700: #146c53;
+  --primary-800: #105642;
+  --primary-900: #0c4132;
+  --primary-950: #082b21;
+  --primary-1000: #0b1b17;
 
-  --secundary-50: #333;
-  --secundary-100: #333;
-  --secundary-200: #333;
-  --secundary-300: #333;
-  --secundary-400: #333;
-  --secundary-500: #333;
+  --secundary-100: #fdfaff;
+
+  --secundary-200: #edc7ff;
+
+  --secundary-300: #dd94ff;
+
+  --secundary-400: #cd61ff;
+
+  --secundary-500: #bd2eff;
+
+  --secundary-600: #ab00fa;
+
+  --secundary-700: #8800c7;
+
+  --secundary-800: #650094;
+
+  --secundary-900: #420061;
+
+  --secundary-1000: #1f002e;
 }
 
 /* animations */
@@ -118,7 +131,6 @@ body {
   position: relative;
 }
 
-
 h2 {
   @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl text-transparent;
 }
@@ -138,8 +150,4 @@ h2 {
 
 .title {
   @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-start text-4xl font-bold text-transparent;
-}
-
-.container {
-  @apply flex flex-col gap-10;
 }

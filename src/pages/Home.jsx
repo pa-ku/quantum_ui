@@ -20,8 +20,8 @@ function Bento() {
   return (
     <>
       <section className="flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 md:w-[40em]">
-        <div className="bg- relative row-span-2 flex flex-col items-center justify-center rounded-md bg-[#0a1b16] p-2 text-center">
-          <p className="z-10 text-3xl text-emerald-100">
+        <div className="bg-primary-1000 relative row-span-2 flex flex-col items-center justify-center rounded-md p-2 text-center">
+          <p className="text-secundary-200 z-10 text-3xl">
             <span className="font-bold"> Copy once </span>use everywhere
           </p>
           <img
@@ -31,12 +31,16 @@ function Bento() {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center rounded-md bg-[#0a1b16] p-2">
-          <img className="h-full w-full" src={tailwindSvg} alt="" />
+        <div className="bg-primary-1000 flex flex-col items-center justify-center rounded-md p-2">
+          <img
+            className="h-full w-full object-contain"
+            src={tailwindSvg}
+            alt=""
+          />
         </div>
 
-        <div className="flex items-center justify-center rounded-md bg-[#0a1b16] p-2">
-          <img src={cssSvg} alt="" />
+        <div className="bg-primary-1000 flex items-center justify-center rounded-md p-4">
+          <img className="h-full w-full object-contain" src={cssSvg} alt="" />
         </div>
       </section>
     </>
