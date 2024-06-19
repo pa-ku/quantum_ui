@@ -17,14 +17,19 @@ export default function CheckBoxes() {
             ::before. Mantaining all the benefits from the vanilla input
           </p>
         </div>
-
+        <ComponentTemplate
+          title={"Theme"}
+          text={"Advanced toggle theme just Css"}
+        >
+          <ThemeCheckbox />
+        </ComponentTemplate>
         <ComponentTemplate
           title={"More Button"}
           text={"Used for clossing tags, or expansive containers"}
         >
           <More_Checkbox />
         </ComponentTemplate>
-        
+
         <ComponentTemplate
           title={"Favorite"}
           text={"Minimalistic Add to favourites Button"}
@@ -34,12 +39,7 @@ export default function CheckBoxes() {
         <ComponentTemplate title={"Active"}>
           <TextCheckbox />
         </ComponentTemplate>
-        <ComponentTemplate
-          title={"Theme"}
-          text={"Advanced toggle theme just Css"}
-        >
-          <ThemeCheckbox />
-        </ComponentTemplate>
+
         <ComponentTemplate title={"Toggle"} text={"Glows when active"}>
           <ToggleBtn />
         </ComponentTemplate>

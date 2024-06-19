@@ -6,7 +6,7 @@ import thunder from "../assets/svg/thunder.svg";
 export default function Home() {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center gap-20 px-4 md:w-[42em]">
+      <main className="flex w-full flex-col items-center justify-center gap-24 px-4 md:w-[42em]">
         <Banner />
         {/* <LastAdded /> */}
         <Bento />
