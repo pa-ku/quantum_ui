@@ -12,8 +12,7 @@ export default function CheckBoxes() {
     <>
       <div className="wrapper">
         <div className="flex w-full flex-col items-center gap-2">
-          <h2 className="font-bold">About</h2>
-          <p className="max-w-[50rem] text-center text-xl">
+          <p className="max-w-[50rem] text-center text-xl text-gray-400">
             All the inputs uses the Type Checkbox,hidding the default style with
             ::before. Mantaining all the benefits from the vanilla input
           </p>
