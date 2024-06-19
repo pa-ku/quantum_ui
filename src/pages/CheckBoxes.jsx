@@ -17,12 +17,14 @@ export default function CheckBoxes() {
             ::before. Mantaining all the benefits from the vanilla input
           </p>
         </div>
+
         <ComponentTemplate
           title={"More Button"}
           text={"Used for clossing tags, or expansive containers"}
         >
           <More_Checkbox />
         </ComponentTemplate>
+        
         <ComponentTemplate
           title={"Favorite"}
           text={"Minimalistic Add to favourites Button"}

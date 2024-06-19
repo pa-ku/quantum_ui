@@ -4,7 +4,7 @@ export default function Heart_Checkbox() {
   return (
     <label
       htmlFor="favorite"
-      className="relative flex h-10 w-10 cursor-pointer items-center justify-center stroke-red-400"
+      className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-red-400 p-0"
     >
       <input
         id="favorite"

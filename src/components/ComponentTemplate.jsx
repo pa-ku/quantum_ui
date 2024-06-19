@@ -11,7 +11,7 @@ export default function ComponentTemplate({ children, title, text }) {
           </button>
         </div>
         {text && <p>{text}</p>}
-        <section className="section">{children}</section>
+        <section className="section px-5">{children}</section>
       </div>
     </>
   );
