@@ -1,48 +1,16 @@
 import cssSvg from "../assets/svg/css.svg";
 import codeSvg from "../assets/svg/codebtn.svg";
 import tailwindSvg from "../assets/svg/tailwind.svg";
-import thunder from "../assets/svg/thunder.svg";
+import react from "../assets/svg/react.svg";
 
 export default function Home() {
   return (
     <>
       <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
-        {/* <LastAdded /> */}
-        <Bento />
+        <CardsGrid />
         <HowTo />
       </main>
-    </>
-  );
-}
-
-function Bento() {
-  return (
-    <>
-      <section className="flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 xl:w-[40em]">
-        <div className="bg-primary-1000 relative col-span-2 flex flex-col items-center justify-center rounded-md p-2 text-center xl:col-span-1 xl:row-span-2">
-          <p className="text-secundary-200 z-10 text-3xl">
-            <span className="font-bold"> Copy once </span>use everywhere
-          </p>
-          <img
-            className="absolute h-full w-full object-contain"
-            src={thunder}
-            alt=""
-          />
-        </div>
-
-        <div className="bg-primary-1000 flex flex-col items-center justify-center rounded-md p-2">
-          <img
-            className="h-full w-full object-contain"
-            src={tailwindSvg}
-            alt=""
-          />
-        </div>
-
-        <div className="bg-primary-1000 flex items-center justify-center rounded-md p-4">
-          <img className="h-full w-full object-contain" src={cssSvg} alt="" />
-        </div>
-      </section>
     </>
   );
 }
@@ -50,9 +18,41 @@ function Bento() {
 function Banner() {
   return (
     <>
-      <h1 className="flex h-40 w-full animate-opacity items-center justify-center bg-gradient-to-t from-gray-400 to-white bg-clip-text text-center text-7xl tracking-tight text-transparent">
-        Design made real
-      </h1>
+      <div className="flex flex-col items-center">
+        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+          Design made real
+        </h1>
+        <p className="text-xl">
+          Copy, paste and <span className="text-primary-200">use it</span>
+        </p>
+      </div>
+    </>
+  );
+}
+
+export function CardsGrid() {
+  return (
+    <>
+      <section className="relative flex gap-7">
+        <div className="hover:rotate-card animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
+          <div className="flex flex-col items-center justify-end">
+            <img className="" src={react} alt="" />
+            <p className="absolute bottom-2 text-background">React</p>
+          </div>
+        </div>
+        <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
+          <div className="flex flex-col items-center">
+            <img className="flex w-full p-10" src={tailwindSvg} alt="" />
+            <p className="absolute bottom-2 text-background">Tailwind</p>
+          </div>
+        </div>
+        <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
+          <div className="flex flex-col items-center">
+            <img className="flex w-full p-10" src={cssSvg} alt="" />
+            <p className="absolute bottom-2 text-background">Css</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

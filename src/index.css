@@ -102,14 +102,17 @@ body {
 .animate-chroma {
   background: linear-gradient(
     to left,
-    #ff4bae,
-    #ff80d9,
+    #24c295,
     #3da4ca,
     #10cad9,
-    #8a4bff,
-    #ff4bae
+    #dd94ff,
+    #24c295
   );
   background-size: 1200%;
+}
+
+.rotate-card {
+  rotate: 0.5 1 0 30deg;
 }
 
 .animate-chroma:hover {
