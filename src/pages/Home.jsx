@@ -6,7 +6,7 @@ import thunder from "../assets/svg/thunder.svg";
 export default function Home() {
   return (
     <>
-      <main className="flex w-full flex-col items-center justify-center gap-24 px-4 md:w-[42em]">
+      <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
         {/* <LastAdded /> */}
         <Bento />
@@ -19,8 +19,8 @@ export default function Home() {
 function Bento() {
   return (
     <>
-      <section className="flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 md:w-[40em]">
-        <div className="bg-primary-1000 relative row-span-2 flex flex-col items-center justify-center rounded-md p-2 text-center">
+      <section className="flex grid h-60 w-full grid-cols-2 grid-rows-2 gap-3 xl:w-[40em]">
+        <div className="bg-primary-1000 relative col-span-2 flex flex-col items-center justify-center rounded-md p-2 text-center xl:col-span-1 xl:row-span-2">
           <p className="text-secundary-200 z-10 text-3xl">
             <span className="font-bold"> Copy once </span>use everywhere
           </p>
