@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SideBar({ sideBar }) {
   return (
@@ -9,6 +10,7 @@ export default function SideBar({ sideBar }) {
         <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
 
         <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
+
         <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
         {/*  <LinkComponent to={"/forms"}>Forms</LinkComponent> */}
         <LinkComponent to={"/cards"}>Cards</LinkComponent>
@@ -19,16 +21,26 @@ export default function SideBar({ sideBar }) {
 }
 
 function LinkComponent({ to, children }) {
+  const [checked, setChecked] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleLinkClick = () => {
+    console.log(navigate);
+    navigate(to);
+  };
+
   return (
     <>
-      <div>
-        <Link
-          to={to}
-          defaultChecked={true}
-          className="flex w-full rounded-2xl px-4 py-1 duration-500 hover:bg-primary-800"
-        >
-          {children}
-        </Link>
+      <div className="relative flex">
+        <p className="pointer-events-none z-10 px-2 py-1">{children}</p>
+
+        <input
+          className="absolute h-full w-full duration-150 cursor-pointer appearance-none rounded-xl opacity-100 outline-1 outline-primary-700 checked:bg-primary-600 checked:outline hover:outline"
+          name="sidebar"
+          onClick={handleLinkClick}
+          type="radio"
+        />
       </div>
     </>
   );
