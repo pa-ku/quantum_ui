@@ -15,7 +15,7 @@ export default function Inputs() {
         </ComponentTemplate>
         <ComponentTemplate
           text={"Less is more with his imput, does the job"}
-          title={"Minimal input"}
+          title={"Minimal"}
         >
           <MinimalInput />
         </ComponentTemplate>

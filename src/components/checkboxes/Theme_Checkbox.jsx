@@ -9,7 +9,7 @@ export default function ThemeCheckbox() {
           className="peer h-10 w-10 cursor-pointer appearance-none"
         />
         <svg
-          className="pointer-events-none absolute h-full w-full opacity-0 duration-200 peer-checked:rotate-180 peer-checked:opacity-100"
+          className="pointer-events-none absolute h-full w-full opacity-0 duration-300 peer-checked:rotate-180 peer-checked:opacity-100"
           width="44"
           height="44"
           viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ export default function ThemeCheckbox() {
           />
         </svg>
         <svg
-          className="pointer-events-none absolute h-full w-full opacity-100 duration-200 peer-checked:opacity-0 peer-checked:rotate-180 "
+          className="pointer-events-none absolute h-full w-full opacity-100 duration-300 peer-checked:opacity-0 peer-checked:rotate-180 "
           width="44"
           height="44"
           viewBox="0 0 24 24"

@@ -19,7 +19,7 @@ export default function CheckBoxes() {
         </div>
         <ComponentTemplate
           title={"Theme"}
-          text={"Advanced toggle theme just Css"}
+          text={"Simple toggle theme"}
         >
           <ThemeCheckbox />
         </ComponentTemplate>
