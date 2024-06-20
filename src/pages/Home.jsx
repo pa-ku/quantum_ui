@@ -34,12 +34,12 @@ export function CardsGrid() {
   return (
     <>
       <section className="relative flex gap-7">
-        <div className="hover:rotate-card animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
+        {/*         <div className="hover:rotate-card animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center justify-end">
             <img className="" src={react} alt="" />
             <p className="absolute bottom-3 text-background">React</p>
           </div>
-        </div>
+        </div> */}
         <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center">
             <img className="flex w-full p-10" src={tailwindSvg} alt="" />
