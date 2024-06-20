@@ -4,7 +4,7 @@ export default function SideBar({ sideBar }) {
   return (
     <>
       <aside
-        className={`${sideBar && "left-0"} items-star to-[var(--primary-600) bg-primary-900 fixed -left-full top-20 z-50 flex h-svh w-52 flex-col gap-5 rounded-tr-lg px-2 py-5 text-lg text-white opacity-95 duration-300 md:sticky md:top-0 md:flex md:rounded-none`}
+        className={`${sideBar && "left-0"} items-star fixed -left-full top-20 z-50 flex h-svh w-52 flex-col gap-5 rounded-tr-lg bg-primary-900 px-2 py-5 text-lg text-white opacity-95 duration-300 md:sticky md:top-0 md:flex md:rounded-none`}
       >
         <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
 
