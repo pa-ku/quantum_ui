@@ -61,11 +61,9 @@ function HowTo() {
             Pure Css components
           </p>
           <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
-
             Vanilla html labels
           </p>
           <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
-      
             No javascript
           </p>
         </div>

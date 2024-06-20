@@ -1,6 +1,6 @@
 import ComponentTemplate from "../components/ComponentTemplate";
-import ShowcaseCard from "../components/cards/Showcase_Card";
-import ProductCard from "../components/cards/Product_Card";
+import ShowcaseCard from "../components/cards/Product_Card";
+import ProductCard from "../components/cards/Showcase_Card";
 
 export default function Cards() {
   return (
