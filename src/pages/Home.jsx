@@ -19,7 +19,7 @@ function Banner() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+        <h1 className="flex h-40 w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
           Design made real
         </h1>
         <p className="text-xl">
