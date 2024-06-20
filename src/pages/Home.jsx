@@ -19,7 +19,7 @@ function Banner() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-500 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
           Design made real
         </h1>
         <p className="text-xl">
@@ -34,12 +34,6 @@ export function CardsGrid() {
   return (
     <>
       <section className="relative flex gap-7">
-        {/*         <div className="hover:rotate-card animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
-          <div className="flex flex-col items-center justify-end">
-            <img className="" src={react} alt="" />
-            <p className="absolute bottom-3 text-background">React</p>
-          </div>
-        </div> */}
         <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center">
             <img className="flex w-full p-10" src={tailwindSvg} alt="" />

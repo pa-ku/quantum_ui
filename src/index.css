@@ -26,9 +26,9 @@ body {
   font-family: "Monserrat";
   background-color: linear-gradient(to bottom "#fff", "#fff");
 }
-
+/* 091713 */
 :root {
-  --background: #091713;
+  --background: #111;
 
   --primary-100: #3ddbaf;
   --primary-200: #28d7a6;
@@ -68,7 +68,7 @@ body {
 pre::-webkit-scrollbar {
   background-color: #111;
   height: 13px;
-border-radius: 0px 0px 50% 50%;
+  border-radius: 0px 0px 50% 50%;
 }
 pre::-webkit-scrollbar-thumb {
   background-color: var(--secundary-200);
@@ -114,12 +114,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .animate-chroma {
-  background: linear-gradient(to left, #24c295, #dd94ff, #edc7ff, #24c295);
+  background: linear-gradient(
+    to left,
+    var(--primary-800),
+    var(--primary-400),
+    var(--primary-500),
+    var(--primary-400),
+    var(--primary-800)
+  );
   background-size: 1200%;
 }
 
-.rotate-card {
-  rotate: 0.5 1 0 30deg;
+.rotate-card:hover {
+  rotate: -1 2 0 25deg;
 }
 
 .animate-chroma:hover {
