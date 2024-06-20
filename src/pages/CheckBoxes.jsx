@@ -2,7 +2,7 @@ import React from "react";
 import ThemeCheckbox from "../components/checkboxes/Theme_Checkbox";
 import TextCheckbox from "../components/checkboxes/Active_Checkbox";
 
-import ToggleBtn from "../components/checkboxes/ToggleBtn";
+import ToggleBtn from "../components/checkboxes/Toggle_Checkbox";
 import Heart_Checkbox from "../components/checkboxes/Heart_Checkbox";
 import More_Checkbox from "../components/checkboxes/More_Checkbox";
 import ComponentTemplate from "../components/ComponentTemplate";

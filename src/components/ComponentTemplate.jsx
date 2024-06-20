@@ -3,7 +3,7 @@ import codeSvg from "../assets/svg/codebtn.svg";
 export default function ComponentTemplate({ children, title, text }) {
   return (
     <>
-      <section className="flex h-full items-center justify-center xl:w-full">
+      <section className="flex h-full items-center justify-center xl:w-full py-5">
         <div className="flex flex-col gap-10 xl:w-[36em]">
           <div className="flex w-full w-max gap-2">
             <h2 className="title">{title}</h2>

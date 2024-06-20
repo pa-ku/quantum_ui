@@ -8,7 +8,7 @@ export default function Cards() {
     <>
       <div className="wrapper">
         <ComponentTemplate
-          title={"Product Card"}
+          title={"Product"}
           text={
             "Showcasing the selling item, you have the option to automaticly calculate the discount label"
           }
