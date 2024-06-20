@@ -100,14 +100,7 @@ body {
 }
 
 .animate-chroma {
-  background: linear-gradient(
-    to left,
-    #24c295,
-    #3da4ca,
-    #10cad9,
-    #dd94ff,
-    #24c295
-  );
+  background: linear-gradient(to left, #24c295, #dd94ff, #edc7ff, #24c295);
   background-size: 1200%;
 }
 
@@ -119,6 +112,7 @@ body {
   animation: gradient 30s linear infinite;
   box-shadow: -5px 5px 20px #333;
 }
+
 
 @keyframes gradient {
   from {

@@ -37,19 +37,19 @@ export function CardsGrid() {
         <div className="hover:rotate-card animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center justify-end">
             <img className="" src={react} alt="" />
-            <p className="absolute bottom-2 text-background">React</p>
+            <p className="absolute bottom-3 text-background">React</p>
           </div>
         </div>
         <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center">
             <img className="flex w-full p-10" src={tailwindSvg} alt="" />
-            <p className="absolute bottom-2 text-background">Tailwind</p>
+            <p className="absolute bottom-3 text-background">Tailwind</p>
           </div>
         </div>
         <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
           <div className="flex flex-col items-center">
             <img className="flex w-full p-10" src={cssSvg} alt="" />
-            <p className="absolute bottom-2 text-background">Css</p>
+            <p className="absolute bottom-3 text-background">Css</p>
           </div>
         </div>
       </section>
