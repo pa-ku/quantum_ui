@@ -33,10 +33,10 @@ function LinkComponent({ to, children }) {
   return (
     <>
       <div className="relative flex">
-        <p className="pointer-events-none z-10 px-2 py-1">{children}</p>
+        <p className="pointer-events-none z-10 px-3 py-1">{children}</p>
 
         <input
-          className="absolute h-full w-full duration-150 cursor-pointer appearance-none rounded-xl opacity-100 outline-1 outline-primary-700 checked:bg-primary-600 checked:outline hover:outline"
+          className="absolute h-full w-full cursor-pointer appearance-none rounded-xl opacity-100 outline-1 outline-primary-800 duration-150 checked:bg-primary-800 checked:outline hover:outline"
           name="sidebar"
           onClick={handleLinkClick}
           type="radio"
