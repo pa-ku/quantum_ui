@@ -1,9 +1,13 @@
 import { Highlight, themes } from "prism-react-renderer";
 import { useState } from "react";
-export default function CodeBlock({ code }) {
+export default function CodeBlock({ code, language }) {
   return (
     <>
-      <Highlight theme={themes.duotoneDark} code={code} language="tsx">
+      <Highlight
+        theme={themes.duotoneDark}
+        code={code}
+        language={language ? language : "tsx"}
+      >
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
             open

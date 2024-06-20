@@ -83,7 +83,6 @@ pre::-webkit-scrollbar-thumb:hover {
 body::-webkit-scrollbar {
   background-color: #111;
   width: 13px;
-
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary-500);
@@ -133,6 +132,21 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: -5px 5px 20px #333;
 }
 
+.chroma {
+  animation: gradient 25s linear infinite;
+  background: linear-gradient(
+    to left,
+    #fde0b6,
+    #f8baa3,
+    #ef6676,
+    #ee4566,
+    #ef6676,
+    #f8baa3,
+    #fde0b6
+  );
+  background-size: 2000%;
+}
+
 @keyframes gradient {
   from {
     background-position: 0%;
@@ -151,12 +165,32 @@ h2 {
   @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl text-transparent;
 }
 
+.opacity {
+  animation: opacity 2s linear infinite;
+}
+
 @keyframes opacity {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+.glow {
+  animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 20px #ffffff00;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #ffffff79;
+  }
+  100% {
+    box-shadow: 0px 0px 20px #ffffff00;
   }
 }
 
