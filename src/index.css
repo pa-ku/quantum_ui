@@ -115,11 +115,11 @@ body::-webkit-scrollbar-thumb:hover {
 .animate-chroma {
   background: linear-gradient(
     to left,
-    var(--primary-800),
-    var(--primary-400),
     var(--primary-500),
-    var(--primary-400),
-    var(--primary-800)
+    var(--primary-300),
+    var(--primary-100),
+    var(--primary-300),
+    var(--primary-500)
   );
   background-size: 1200%;
 }

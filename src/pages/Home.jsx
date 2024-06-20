@@ -19,7 +19,7 @@ function Banner() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-500 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+        <h1 className="background flex h-40 w-full animate-glow items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
           Design made real
         </h1>
         <p className="text-xl">
@@ -54,16 +54,20 @@ export function CardsGrid() {
 function HowTo() {
   return (
     <>
-      <section className="gap flex w-full flex-col items-start gap-10">
-        <h2>How to use it?</h2>
-        <div className="space-y-4">
-          <p>1. Find the component you want</p>
-          <span className="flex items-center gap-2">
-            <p>2. Press the code button</p>
-            <img src={codeSvg} alt="" />
-          </span>
-          <p>3. Choose tailwind or Pure css</p>
-          <p>3. Copy and use the code wherever you need</p>
+      <section className="gap flex w-full flex-col items-center justify-center gap-10">
+        <h2 className="font-bold">Minimal</h2>
+        <div className="flex h-max w-full flex-col gap-4 p-6">
+          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
+            Pure Css components
+          </p>
+          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
+
+            Vanilla html labels
+          </p>
+          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
+      
+            No javascript
+          </p>
         </div>
       </section>
     </>
