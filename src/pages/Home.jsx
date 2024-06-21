@@ -19,7 +19,7 @@ function Banner() {
   return (
     <>
       <div className="flex h-40 flex-col items-center justify-center">
-        <h1 className="flex h-full w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+        <h1 className="flex h-full w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-6xl font-semibold tracking-tight text-transparent md:text-7xl">
           Design made real
         </h1>
         <p className="text-2xl">
@@ -33,7 +33,7 @@ function Banner() {
 function Cards() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-2 text-secundary-200">
+      <div className="grid grid-cols-2 gap-2 p-3 text-secundary-200 md:p-0">
         <div className="rounded-xl bg-[#1d222f] p-10">
           <svg
             className="h-full"
