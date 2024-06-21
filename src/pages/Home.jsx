@@ -64,7 +64,7 @@ function Cards() {
             <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
           </svg>
         </div>
-        <div className="col-span-2 rounded-xl bg-[#1d222f] p-10">
+        <div className="col-span-2 rounded-xl bg-[#1d222f] p-10 text-center">
           <h3 className="text-3xl">Pure Css Components</h3>
         </div>
       </div>
@@ -77,11 +77,11 @@ function Minimal() {
     <>
       <section className="gap flex w-full flex-col items-center justify-center gap-10">
         <h2 className="font-bold">Minimal</h2>
-       
-          <p className="text-xl">
-            Designed to be fast, it uses vanilla html and no javascript making animations smoother
-          </p>
-      
+
+        <p className="text-xl">
+          Designed to be fast, it uses vanilla html and no javascript making
+          animations smoother
+        </p>
       </section>
     </>
   );
