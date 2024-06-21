@@ -64,6 +64,13 @@ body {
   --secundary-1000: #1f002e;
 }
 
+/* SELECTION */
+
+::selection {
+color: white;
+background: #2595be80;
+}
+
 /* animations */
 
 pre::-webkit-scrollbar {
