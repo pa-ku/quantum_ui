@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
-        <CardsGrid />
-        <HowTo />
+        <Cards />
+        <Minimal />
       </main>
     </>
   );
@@ -18,11 +18,11 @@ export default function Home() {
 function Banner() {
   return (
     <>
-      <div className="flex flex-col items-center">
-        <h1 className="flex h-40 w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
+      <div className="flex h-40 flex-col items-center justify-center">
+        <h1 className="flex h-full w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-7xl font-semibold tracking-tight text-transparent">
           Design made real
         </h1>
-        <p className="text-xl">
+        <p className="text-2xl">
           Copy, paste and <span className="text-primary-200">use it</span>
         </p>
       </div>
@@ -30,43 +30,58 @@ function Banner() {
   );
 }
 
-export function CardsGrid() {
+function Cards() {
   return (
     <>
-      <section className="relative flex gap-7">
-        <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
-          <div className="flex flex-col items-center">
-            <img className="flex w-full p-10" src={tailwindSvg} alt="" />
-            <p className="absolute bottom-3 text-background">Tailwind</p>
-          </div>
+      <div className="grid grid-cols-2 gap-2 text-secundary-200">
+        <div className="rounded-xl bg-[#1d222f] p-10">
+          <svg
+            className="h-full"
+            viewBox="0 0 24 24"
+            stroke-width="0.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+          </svg>
         </div>
-        <div className="animate-chroma [transform: rotateY(15deg)] [transform: rotateX(15deg)]] flex h-64 w-52 items-center justify-center rounded-md text-2xl font-bold duration-500">
-          <div className="flex flex-col items-center">
-            <img className="flex w-full p-10" src={cssSvg} alt="" />
-            <p className="absolute bottom-3 text-background">Css</p>
-          </div>
+
+        <div className="rounded-xl bg-[#1d222f] p-10">
+          <svg
+            className="h-full"
+            viewBox="0 0 24 24"
+            stroke-width="0.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+          </svg>
         </div>
-      </section>
+        <div className="col-span-2 rounded-xl bg-[#1d222f] p-10">
+          <h3 className="text-3xl">Pure Css Components</h3>
+        </div>
+      </div>
     </>
   );
 }
 
-function HowTo() {
+function Minimal() {
   return (
     <>
       <section className="gap flex w-full flex-col items-center justify-center gap-10">
         <h2 className="font-bold">Minimal</h2>
-        <div className="flex h-max w-full flex-col gap-4 p-6">
-          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
-            Pure Css components
+       
+          <p className="text-xl">
+            Designed to be fast, it uses vanilla html and no javascript making animations smoother
           </p>
-          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
-            Vanilla html labels
-          </p>
-          <p className="rounded-xl bg-gray-700 px-4 py-2 text-xl">
-            No javascript
-          </p>
-        </div>
+      
       </section>
     </>
   );

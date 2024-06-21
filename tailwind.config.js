@@ -43,6 +43,7 @@ export default {
       boxShadow: {
         bottom: "0px 0.25em var(--secundary-700)",
         center: "0px 0px 20px",
+        "center-10": "0px 0px 10px ",
       },
     },
     plugins: [],
