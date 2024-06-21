@@ -8,6 +8,7 @@ import Forms from "./pages/Forms";
 import Colors from "./pages/Colors";
 import Animations from "./pages/Animations";
 import CheckBoxes from "./pages/CheckBoxes";
+import Modals from "./pages/Modals";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="inputs" element={<Inputs />} />
             <Route path="forms" element={<Forms />} />
             <Route path="colors" element={<Colors />} />
+            <Route path="modals" element={<Modals />} />
             <Route path="animations" element={<Animations />} />
             <Route path="checkboxes" element={<CheckBoxes />} />
           </Route>

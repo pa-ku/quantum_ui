@@ -12,6 +12,7 @@ export default function SideBar({ sideBar }) {
         <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
         {/*  <LinkComponent to={"/forms"}>Forms</LinkComponent> */}
         <LinkComponent to={"/cards"}>Cards</LinkComponent>
+        <LinkComponent to={"/modals"}>Modals</LinkComponent>
         <LinkComponent to={"/animations"}>Animations</LinkComponent>
       </aside>
     </>

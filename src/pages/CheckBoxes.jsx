@@ -6,21 +6,17 @@ import ToggleBtn from "../components/checkboxes/Toggle_Checkbox";
 import Heart_Checkbox from "../components/checkboxes/Heart_Checkbox";
 import More_Checkbox from "../components/checkboxes/More_Checkbox";
 import ComponentTemplate from "../components/ComponentTemplate";
+import ComponentDescription from "../components/ComponentDescription";
 
 export default function CheckBoxes() {
   return (
     <>
-      <div className="wrapper">
-        <div className="flex w-full flex-col items-center gap-2">
-          <p className="max-w-[50rem] text-center text-xl text-gray-400">
-            All the inputs uses the Type Checkbox,hidding the default style with
-            ::before. Mantaining all the benefits from the vanilla input
-          </p>
-        </div>
-        <ComponentTemplate
-          title={"Theme"}
-          text={"Simple toggle theme"}
-        >
+    
+      <ComponentDescription>
+        All the inputs uses the Type Checkbox,hidding the default style with
+        ::before. Mantaining all the benefits from the vanilla input
+      </ComponentDescription>
+        <ComponentTemplate title={"Theme"} text={"Simple toggle theme"}>
           <ThemeCheckbox />
         </ComponentTemplate>
         <ComponentTemplate
@@ -43,7 +39,7 @@ export default function CheckBoxes() {
         <ComponentTemplate title={"Toggle"} text={"Glows when active"}>
           <ToggleBtn />
         </ComponentTemplate>
-      </div>
+     
     </>
   );
 }
