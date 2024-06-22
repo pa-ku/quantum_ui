@@ -5,7 +5,7 @@ export default function SideBar({ sideBar }) {
   return (
     <>
       <aside
-        className={`${sideBar && "left-0"} items-star fixed -left-full top-20 z-50 flex hidden h-svh w-52 flex-col gap-5 rounded-tr-lg bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 duration-300 md:sticky md:top-0 md:flex md:rounded-none`}
+        className={`${sideBar && "left-0"} fixed top-0 z-20 hidden h-svh w-52 flex-col gap-5 rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
       >
         <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
         <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
@@ -16,7 +16,7 @@ export default function SideBar({ sideBar }) {
       </aside>
 
       <aside
-        className={`${sideBar && "-translate-y-0"} fixed bottom-0 z-50 h-max w-full translate-y-full bg-[var(--dark-200)] p-5 pb-20 text-white opacity-90 duration-300 md:hidden`}
+        className={`${sideBar && "-translate-y-0"} fixed bottom-0 z-10 flex h-max w-full translate-y-full flex-col gap-2 bg-[var(--dark-200)] p-5 pb-20 text-white opacity-90 duration-300 md:hidden`}
       >
         <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
         <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>

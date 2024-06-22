@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function NavBar({ openSideBar }) {
   return (
     <>
-      <nav className="fixed md:relative bg-[var(--dark-200)] md:bg-background bottom-0 flex h-16 w-full items-center justify-between gap-8 z-50 px-4 text-lg font-bold text-white md:justify-center ">
+      <nav className="fixed md:relative bg-[var(--dark-200)] md:bg-background bottom-0 flex h-16 w-full items-center justify-between gap-8 z-10 px-4 text-lg font-bold text-white md:justify-center ">
           <Link
             to={"/"}
             className="flex h-6 items-center justify-center gap-2 hover:text-primary-100"
