@@ -1,12 +1,12 @@
 import ComponentTemplate from "../components/ComponentTemplate";
+import ComponentTitle from "../components/ComponentTitle";
 import Button_1 from "../components/buttons/ActionBtn";
 import ChromaBtn from "../components/buttons/ChromaBtn";
-
 
 export default function Buttons() {
   return (
     <>
-    
+      <ComponentTitle>Buttons</ComponentTitle>
       <div className="wrapper">
         <ComponentTemplate
           title={"Action"}

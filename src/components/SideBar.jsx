@@ -1,67 +1,13 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import NavLinks from "./NavLinks";
 
-export default function SideBar({ sideBar }) {
+export default function SideBar() {
   return (
     <>
       <aside
-        className={`${sideBar && "left-0"} fixed top-0 z-20 hidden h-svh w-52 flex-col gap-5 rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
+        className={`fixed top-0 z-20 hidden h-svh w-52 flex-col gap-5 rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
       >
-        <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
-        <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
-        <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
-        {/*  <LinkComponent to={"/forms"}>Forms</LinkComponent> */}
-        <LinkComponent to={"/cards"}>Cards</LinkComponent>
-        <LinkComponent to={"/animations"}>Animations</LinkComponent>
-      </aside>
-
-      <aside
-        className={`${sideBar && "-translate-y-0"} fixed bottom-0 z-10 flex h-max w-full translate-y-full flex-col gap-2 bg-[var(--dark-200)] p-5 pb-20 text-white opacity-90 duration-300 md:hidden`}
-      >
-        <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
-        <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
-        <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
-        {/*  <LinkComponent to={"/forms"}>Forms</LinkComponent> */}
-        <LinkComponent to={"/cards"}>Cards</LinkComponent>
-        <LinkComponent to={"/animations"}>Animations</LinkComponent>
+        <NavLinks />
       </aside>
     </>
   );
-}
-
-function LinkComponent({ to, children }) {
-  const navigate = useNavigate();
-
-  const handleLinkClick = () => {
-    console.log(navigate);
-    navigate(to);
-  };
-
-  return (
-    <>
-      <div className="relative flex">
-        <p className="pointer-events-none z-10 px-3 py-0.5">{children}</p>
-        <input
-          className="absolute h-full w-full cursor-pointer appearance-none rounded-xl opacity-100 outline-1 outline-secundary-700 duration-150 checked:bg-secundary-800 checked:outline hover:outline"
-          name="sidebar"
-          onClick={handleLinkClick}
-          type="radio"
-        />
-      </div>
-    </>
-  );
-}
-
-//Posible agregado de un bandoñon para mas navegacion
-{
-  /*     {active && (
-          <div className="h-full flex-col duration-200">
-            <button className="flex w-full rounded-2xl px-10 py-1 hover:bg-[var(--primary-600)]">
-              test
-            </button>
-            <button className="flex w-full rounded-2xl px-10 py-1 hover:bg-[var(--primary-600)]">
-              test
-            </button>
-          </div>
-        )} */
 }
