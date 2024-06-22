@@ -9,7 +9,6 @@ export default function Home() {
       <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
         <Cards />
-        <Minimal />
       </main>
     </>
   );
@@ -68,21 +67,6 @@ function Cards() {
           <h3 className="text-3xl">Pure Css Components</h3>
         </div>
       </div>
-    </>
-  );
-}
-
-function Minimal() {
-  return (
-    <>
-      <section className="gap flex w-full flex-col items-center justify-center gap-10">
-        <h2 className="font-bold">Minimal</h2>
-
-        <p className="text-xl">
-          Designed to be fast, it uses vanilla html and no javascript making
-          animations smoother
-        </p>
-      </section>
     </>
   );
 }
