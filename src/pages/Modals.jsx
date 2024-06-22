@@ -34,7 +34,7 @@ function closeModal() {
         </button>
         <dialog
           ref={refModal}
-          className="bg-dark-200 absolute left-0 right-0 rounded-xl p-5 text-start text-white"
+          className="bg-dark-200 absolute w-full rounded-xl p-5 text-start text-white"
         >
           <h2 className="text-start">UseModal</h2>
           <p className="py-3">
