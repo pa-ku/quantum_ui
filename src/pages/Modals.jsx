@@ -1,6 +1,6 @@
 import CodeBlock from "../components/CodeBlock";
-import ComponentDescription from "../components/ComponentDescription";
 import ComponentTemplate from "../components/ComponentTemplate";
+import ComponentTitle from "../components/ComponentTitle";
 import useModal from "../components/hooks/useModal";
 import Confirmation_modal from "../components/modals/Confirmation_Modal";
 import Contact_modal from "../components/modals/Contact_Modal";
@@ -24,47 +24,57 @@ function closeModal() {
 }`;
   return (
     <>
-      <ComponentDescription>
-        Implementing modals in React is easy using this handy Hook
-        <button
-          onClick={openModal}
-          className="px-1 text-primary-200 hover:brightness-125"
-        >
-          useModal
-        </button>
-        <dialog
-          ref={refModal}
-          className="bg-dark-200 absolute w-full rounded-xl p-5 text-start text-white"
-        >
-          <h2 className="text-start">UseModal</h2>
-          <p className="py-3">
-            Add the <span className="text-primary-200">refModal</span> to the
-            dialog component ej {"ref=( refModal )"}
-          </p>
-          <p className="py-3">
-            Use the <span className="text-primary-200">openModal</span> function
-            in a button to manage the sowModal state
-          </p>
-          <p className="py-3">
-            <span className="text-primary-200">closeModal</span> can be used in
-            multiple buttons
-          </p>
-          <CodeBlock code={codeBlock} />
-          <button
-            onClick={closeModal}
-            className="my-5 w-full rounded-xl bg-secundary-800 p-2"
-          >
-            CLOSE
-          </button>
-        </dialog>
-      </ComponentDescription>
-      <ComponentTemplate title={"Contant Modal"}>
+      <ComponentTitle
+        description={
+          <>
+            Implementing modals in React is easy using this handy Hook
+            <button
+              onClick={openModal}
+              className="px-1 text-primary-200 hover:brightness-125"
+            >
+              useModal
+            </button>
+            <dialog
+              ref={refModal}
+              className="bg-dark-200 absolute m-auto w-full rounded-xl p-5 text-start text-white md:w-[50em]"
+            >
+              <h2 className="text-start">UseModal</h2>
+              <p className="py-3">
+                Add the <span className="text-primary-200">refModal</span> to
+                the dialog component ej {"ref= { refModal }"}
+              </p>
+              <p className="py-3">
+                Use the <span className="text-primary-200">openModal</span>{" "}
+                function in a button to manage the sowModal state
+              </p>
+              <p className="py-3">
+                <span className="text-primary-200">closeModal</span> can be used
+                in multiple buttons
+              </p>
+              <CodeBlock code={codeBlock} />
+              <button
+                onClick={closeModal}
+                className="mt-5 w-full rounded-xl bg-secundary-800 p-2"
+              >
+                CLOSE
+              </button>
+            </dialog>
+          </>
+        }
+      >
+        Modals
+      </ComponentTitle>
+
+      {/*  <ComponentTemplate title={"Contant Modal"}>
         <Contact_modal />
       </ComponentTemplate>
-      <ComponentTemplate title={"Contant Modal"}>
+      <ComponentTemplate title={"Message Modal"}>
         <Message_modal />
-      </ComponentTemplate>
-      <ComponentTemplate title={"Contant Modal"}>
+      </ComponentTemplate> */}
+      <ComponentTemplate
+        text={"Minimalistic Confirm o negate modal with two buttons"}
+        title={"Confirmation"}
+      >
         <Confirmation_modal />
       </ComponentTemplate>
     </>

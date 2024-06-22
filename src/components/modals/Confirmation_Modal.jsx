@@ -12,7 +12,10 @@ export default function Confirmation_modal() {
       >
         Open Modal
       </button>
-      <dialog ref={refModal} className="space-y-2 rounded-xl p-5">
+      <dialog
+        ref={refModal}
+        className="absolute left-0 right-0 m-auto space-y-2 rounded-xl p-5"
+      >
         <p className="text-3xl">You like dulce de leche?</p>
         <div className="flex items-center justify-center gap-4 text-xl text-white">
           <button
