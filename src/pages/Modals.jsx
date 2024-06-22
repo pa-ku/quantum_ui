@@ -36,16 +36,16 @@ function closeModal() {
             </button>
             <dialog
               ref={refModal}
-              className="bg-dark-200 absolute m-auto w-full rounded-xl p-5 text-start text-white md:w-[50em]"
+              className="bg-dark-200 m-auto rounded-xl p-5 text-start text-sm text-white md:m-auto md:w-[50em] md:text-base"
             >
-              <h2 className="text-start">UseModal</h2>
+              <h2 className="text-md text-start">UseModal</h2>
               <p className="py-3">
                 Add the <span className="text-primary-200">refModal</span> to
                 the dialog component ej {"ref= { refModal }"}
               </p>
               <p className="py-3">
                 Use the <span className="text-primary-200">openModal</span>{" "}
-                function in a button to manage the sowModal state
+                function in a button to manage the showModal state
               </p>
               <p className="py-3">
                 <span className="text-primary-200">closeModal</span> can be used

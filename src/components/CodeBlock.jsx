@@ -11,7 +11,7 @@ export default function CodeBlock({ code, language }) {
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
             open
-            className="w-full overflow-auto rounded-xl bg-secundary-1000 px-4 py-2 shadow-center-10 shadow-secundary-500"
+            className="w-full overflow-auto rounded-xl bg-secundary-1000 p-2 md:px-4 text-xs shadow-center-10 shadow-secundary-500 md:text-base"
           >
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line })}>

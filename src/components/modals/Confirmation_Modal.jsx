@@ -14,9 +14,9 @@ export default function Confirmation_modal() {
       </button>
       <dialog
         ref={refModal}
-        className="absolute left-0 right-0 m-auto space-y-2 rounded-xl p-5"
+        className="absolute left-0 right-0 m-auto space-y-6 rounded-xl p-5"
       >
-        <p className="text-3xl">You like dulce de leche?</p>
+        <p className="text-2xl">You like dulce de leche?</p>
         <div className="flex items-center justify-center gap-4 text-xl text-white">
           <button
             onClick={closeModal}
