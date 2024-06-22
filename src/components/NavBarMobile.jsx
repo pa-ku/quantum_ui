@@ -1,4 +1,3 @@
-import moreBtn from "../assets/svg/more_btn.svg";
 import quantumLogo from "../assets/images/quantumLogo.webp";
 import { useState } from "react";
 import NavLinks from "./NavLinks";
@@ -21,13 +20,16 @@ export default function NavBarMobile({ sideBar }) {
           <img className="h7 w-10" src={quantumLogo} alt="" />
           Quantum
         </Link>
-        <div className="flex items-center justify-center gap-6">
-          <button
-            className="h-10 w-10 text-white hover:scale-110 md:hidden"
-            onClick={handleMenu}
-          >
-            <img className="h-7 w-7" src={moreBtn} alt="see components" />
-          </button>
+
+        <div className="relative flex h-6 w-6 items-center justify-center">
+          <input
+            type="checkbox"
+            onChange={handleMenu}
+            className="peer absolute h-full w-full cursor-pointer appearance-none rounded-lg bg-white duration-300"
+          />
+          <p className="pointer-events-none absolute h-max w-max rotate-45 text-sm text-background duration-200 font-bold peer-checked:rotate-0">
+            ✖
+          </p>
         </div>
       </header>
       <nav
