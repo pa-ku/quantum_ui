@@ -31,7 +31,7 @@ export default function NavBarMobile({ sideBar }) {
         </div>
       </header>
       <nav
-        className={`${openMenu && "translate-y-0"} fixed bottom-16 left-0 flex h-max w-full translate-y-full flex-col gap-2 bg-[var(--dark-200)] p-5 text-white opacity-90 duration-300 md:hidden`}
+        className={`${openMenu && "-translate-y-0"} fixed bottom-16 left-0 flex h-max w-full translate-y-full flex-col gap-2 bg-[var(--dark-200)] p-5 text-white opacity-90 duration-300 md:hidden`}
       >
         <NavLinks />
       </nav>
