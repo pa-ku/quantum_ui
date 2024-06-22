@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 h2 {
-  @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl text-transparent;
+  @apply font-bold w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl text-transparent;
 }
 
 .opacity {
