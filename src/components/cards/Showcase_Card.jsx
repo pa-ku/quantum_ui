@@ -1,6 +1,6 @@
 import barilocheWebp from "../../assets/images/bariloche.webp";
 import CodeBlock from "../CodeBlock";
-export default function Product_Card() {
+export default function Showcase_card() {
   const codeBlock = `<div className="bg-shadow-md h-max w-full 
   rounded-xl 
   sm:w-72 

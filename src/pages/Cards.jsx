@@ -1,9 +1,10 @@
 import ComponentTemplate from "../components/ComponentTemplate";
-import ProductCard from "../components/cards/Product_card";
-import ShowcaseCard from "../components/cards/Showcase_card";
 import ComponentTitle from "../components/ComponentTitle";
 import Accent_card from "../components/cards/Accent_card";
+import Product_card from "../components/cards/Product_card";
+import Showcase_card from "../components/cards/Showcase_card";
 import AccentText from "../components/AccentText";
+
 export default function Cards() {
   return (
     <>
@@ -35,14 +36,14 @@ export default function Cards() {
             "Showcasing the selling item, you have the option to automaticly calculate the discount label"
           }
         >
-          <ProductCard />
+          <Product_card />
         </ComponentTemplate>
 
         <ComponentTemplate
           title={"Showcase"}
           text={"Minimalistic Card with key information"}
         >
-          <ShowcaseCard />
+          <Showcase_card />
         </ComponentTemplate>
       </div>
     </>

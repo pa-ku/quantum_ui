@@ -1,6 +1,6 @@
 import CodeBlock from "../CodeBlock";
 
-export default function ProductCard() {
+export default function Product_card() {
   const price = 100;
   const oldPrice = 150;
   const discount = Math.floor(((oldPrice - price) / oldPrice) * 100);
