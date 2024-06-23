@@ -15,7 +15,6 @@ function BentoBox() {
       <div className="grid">
         <div className="box">
           <div className="content">
-            {" "}
             <svg
               className="h-full"
               viewBox="0 0 24 24"
@@ -32,20 +31,18 @@ function BentoBox() {
         </div>
 
         <div className="box">
-          <div className="content">
-            {" "}
+          <div className="content p-3">
             <svg
-              className="h-full"
+            className="h-full w-full"
               viewBox="0 0 24 24"
-              strokeWidth="0.5"
-              stroke="currentColor"
+              stroke-width="0.5"
+              stroke="#ffffff"
               fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-              <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+              <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
             </svg>
           </div>
         </div>
