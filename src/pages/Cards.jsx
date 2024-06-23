@@ -3,7 +3,8 @@ import ComponentTitle from "../components/ComponentTitle";
 import Accent_card from "../components/cards/Accent_card";
 import Showcase_card from "../components/cards/Showcase_card";
 import AccentText from "../components/AccentText";
-import Product_card from "../components/cards/Product_card";
+import Product_card from "../components/cards/Product_card.";
+
 
 export default function Cards() {
   return (
