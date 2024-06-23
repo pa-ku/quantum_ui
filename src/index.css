@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --color-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fff;
+}
+
+@property --color-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fff;
+}
+
+.slick-button {
+  --color-1: #E0218C;
+  --color-2: #EAA221;
+  background-image: linear-gradient(40deg, var(--color-1), var(--color-2));
+  transition:
+    --color-1 2000ms,
+    --color-2 800ms;
+}
+
+.slick-button:hover {
+  --color-1: #EAA221;
+  --color-2: #E0218C;
+}
+
 @font-face {
   font-family: "Monserrat";
   src: url("../src/assets/fonts/Montserrat-Regular.ttf");
@@ -44,23 +70,14 @@ body {
   --primary-1000: #0b1b17;
 
   --secundary-100: #fdfaff;
-
   --secundary-200: #edc7ff;
-
   --secundary-300: #dd94ff;
-
   --secundary-400: #cd61ff;
-
   --secundary-500: #bd2eff;
-
   --secundary-600: #ab00fa;
-
   --secundary-700: #8800c7;
-
   --secundary-800: #650094;
-
   --secundary-900: #420061;
-
   --secundary-1000: #1f002e;
 }
 

@@ -3,7 +3,6 @@ import CodeBlock from "../CodeBlock";
 export default function Modern_input() {
   const codeBlock = `<div className="relative flex h-max
    w-max items-center justify-start">
-
     <input
         type="text"
         className="text-red peer rounded-xl px-3 py-2 

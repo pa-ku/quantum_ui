@@ -1,26 +1,30 @@
 import ComponentTemplate from "../components/ComponentTemplate";
 import ComponentTitle from "../components/ComponentTitle";
-import Button_1 from "../components/buttons/ActionBtn";
-import ChromaBtn from "../components/buttons/ChromaBtn";
+import ActionButton from "../components/buttons/Action_button";
+import ChromaBtn from "../components/buttons/Chroma_button";
+import Slick_button from "../components/buttons/Slick_button";
 
 export default function Buttons() {
   return (
     <>
       <ComponentTitle>Buttons</ComponentTitle>
-      <div className="wrapper">
-        <ComponentTemplate
-          title={"Action"}
-          text={"Simple button with interaction"}
-        >
-          <Button_1 />
-        </ComponentTemplate>
-        <ComponentTemplate
-          title={"Chroma"}
-          text={"Needs the chroma keyframes to work"}
-        >
-          <ChromaBtn />
-        </ComponentTemplate>
-      </div>
+
+      <ComponentTemplate title={"Slick"} text={"This button needs the @property from css to animate the colors of the background image. Changing the transition time creates different animations "}>
+        <Slick_button />
+      </ComponentTemplate>
+
+      <ComponentTemplate
+        title={"Action"}
+        text={"Simple button with interaction"}
+      >
+        <ActionButton />
+      </ComponentTemplate>
+      <ComponentTemplate
+        title={"Chroma"}
+        text={"Needs the chroma keyframes to work"}
+      >
+        <ChromaBtn />
+      </ComponentTemplate>
     </>
   );
 }
