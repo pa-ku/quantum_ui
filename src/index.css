@@ -312,14 +312,12 @@ h2 {
   color: white;
 }
 
-.content {
-  background-color: var(--background);
+.content {  background-color: #1d232e;
   mix-blend-mode: darken;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-border-radius: 5px;
-  padding: 20px;
-
+  border-radius: 5px;
+  padding: 1em;
 }

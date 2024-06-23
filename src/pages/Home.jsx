@@ -68,7 +68,6 @@ function BentoBox() {
         <div className="box row-span-2 h-full">
           <div className="content h-full w-full">
             <svg
-              className="h-full w-full"
               viewBox="0 0 24 24"
               stroke-width="0.5"
               stroke="#ffffff"
