@@ -3,7 +3,7 @@ import { useState } from "react";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 
-export default function NavBarMobile({ sideBar }) {
+export default function NavBarMobile() {
   const [openMenu, setOpenMenu] = useState(false);
 
   function handleMenu() {

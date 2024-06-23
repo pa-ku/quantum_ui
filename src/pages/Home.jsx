@@ -1,8 +1,3 @@
-import cssSvg from "../assets/svg/css.svg";
-import codeSvg from "../assets/svg/codebtn.svg";
-import tailwindSvg from "../assets/svg/tailwind.svg";
-import react from "../assets/svg/react.svg";
-
 export default function Home() {
   return (
     <>

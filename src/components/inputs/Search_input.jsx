@@ -1,4 +1,3 @@
-import React from "react";
 import CodeBlock from "../CodeBlock";
 export default function InputSearch() {
   const codeBlock =
@@ -37,15 +36,14 @@ export default function InputSearch() {
           type="text"
           required
         />
-        <button className="bg-secundary-300 hover:bg-secundary-200 w-14 rounded-r-xl bg-red-200 p-1">
+        <button className="bg-secundary-300 hover:bg-secundary-200 w-12 rounded-r-xl bg-red-200 p-1">
           <svg
-            className="h-full w-full"
+            className="h-full w-full p-1"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#fff"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />

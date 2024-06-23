@@ -1,4 +1,4 @@
-import React from "react";
+
 import ThemeCheckbox from "../components/checkboxes/Theme_Checkbox";
 import TextCheckbox from "../components/checkboxes/Active_Checkbox";
 import ToggleBtn from "../components/checkboxes/Toggle_Checkbox";

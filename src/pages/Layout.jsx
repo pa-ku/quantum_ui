@@ -15,7 +15,7 @@ export default function Layout() {
         <SideBar sideBar={sideBar} />
         <div className="flex w-full flex-col items-center justify-start">
           <NavBar />
-          <section className="flex w-full flex-col pb-28 items-center gap-20 py-10 text-white">
+          <section className="flex w-full flex-col items-center gap-20 py-10 pb-28 text-white">
             <Outlet />
             <NavBarMobile />
           </section>
