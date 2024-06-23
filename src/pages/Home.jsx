@@ -93,7 +93,7 @@ function BentoBox() {
 
   return (
     <>
-      <div className="grid shadow-center shadow-black">
+      <div className="grid shadow-center shadow-slate-800">
         <div className="box col-span-2">
           <div className="content h-full p-6 text-center text-xl md:text-3xl">
             Pure Css Components

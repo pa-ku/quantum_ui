@@ -313,8 +313,8 @@ h2 {
 }
 
 .content {
-  background-color: #1d232e;
   background-color: var(--dark-200);
+  background-color: #1d232e;
   mix-blend-mode: darken;
   width: 100%;
   display: flex;
