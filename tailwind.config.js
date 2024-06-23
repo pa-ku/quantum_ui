@@ -35,7 +35,6 @@ export default {
           1000: "var(--secundary-1000)",
         },
       },
-
       fontFamily: {
         monserrat: "Monserrat",
       },
