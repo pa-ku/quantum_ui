@@ -25,65 +25,105 @@ function Banner() {
 }
 
 function BentoBox() {
+  const tailwindLogo = (
+    <svg
+      className="p-5"
+      viewBox="0 0 24 24"
+      strokeWidth="0.5"
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+    </svg>
+  );
+
+  const accesLogo = (
+    <svg
+      className="p-10"
+      viewBox="0 0 24 24"
+      stroke-width="1"
+      stroke="#ffffff"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
+      <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+    </svg>
+  );
+
+  const boltLogo = (
+    <svg
+      viewBox="0 0 24 24"
+      stroke-width="0.5"
+      stroke="#ffffff"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+    </svg>
+  );
+
+  const mobileLogo = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-device-mobile-code"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="#ffffff"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M11.5 21h-3.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+      <path d="M11 4h2" />
+      <path d="M12 17v.01" />
+    </svg>
+  );
+
   return (
     <>
       <div className="grid">
         <div className="box">
           <div className="content relative h-full min-w-full">
-            <svg
-              className="p-5"
-              viewBox="0 0 24 24"
-              strokeWidth="0.5"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
-            </svg>
+            {tailwindLogo}
             <p className="absolute bottom-5">Tailwind</p>
           </div>
         </div>
         <div className="box">
           <div className="content relative h-full w-full">
-            <svg
-              className="p-10"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="#ffffff"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-              <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-              <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-            </svg>
+            {accesLogo}
             <p className="absolute bottom-5">Accesible</p>
           </div>
         </div>
 
-        <div className="box row-span-2 h-full">
+        <div className="box relative row-span-2 h-full">
           <div className="content h-full w-full">
-            <svg
-              viewBox="0 0 24 24"
-              stroke-width="0.5"
-              stroke="#ffffff"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
-            </svg>
+            {boltLogo}
             <p className="absolute bottom-5 text-xl">Fast animations </p>
           </div>
         </div>
 
-        <div className="box span">
+        <div className="box col-span-2">
           <div className="content h-20 text-3xl">Pure Css Components</div>
+        </div>
+        <div className="box col-span-3">
+          <div className="content h-20 text-3xl">
+            {mobileLogo}
+            <p>Responsive</p>
+          </div>
         </div>
 
         <span className="chroma"></span>
