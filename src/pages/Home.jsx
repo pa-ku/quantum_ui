@@ -27,7 +27,7 @@ function Banner() {
 function BentoBox() {
   const tailwindLogo = (
     <svg
-      className="p-5"
+      className="h-full w-full md:h-20 md:w-20"
       viewBox="0 0 24 24"
       strokeWidth="0.5"
       stroke="currentColor"
@@ -42,7 +42,7 @@ function BentoBox() {
 
   const accesLogo = (
     <svg
-      className="p-10"
+      className="h-full w-full md:h-20 md:w-20"
       viewBox="0 0 24 24"
       stroke-width="1"
       stroke="#ffffff"
@@ -59,6 +59,7 @@ function BentoBox() {
 
   const boltLogo = (
     <svg
+      className="h-full w-full md:h-20 md:w-20"
       viewBox="0 0 24 24"
       stroke-width="0.5"
       stroke="#ffffff"
@@ -73,10 +74,7 @@ function BentoBox() {
 
   const mobileLogo = (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-device-mobile-code"
-      width="44"
-      height="44"
+      className="h-10 w-10 md:h-10 md:w-10"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="#ffffff"
@@ -96,31 +94,35 @@ function BentoBox() {
   return (
     <>
       <div className="grid shadow-center shadow-black">
-        <div className="box">
-          <div className="content relative h-full min-w-full">
-            {tailwindLogo}
-            <p className="absolute bottom-5">Tailwind</p>
+        <div className="box col-span-2">
+          <div className="content h-full p-6 text-center text-xl md:text-3xl">
+            Pure Css Components
           </div>
         </div>
-        <div className="box">
-          <div className="content relative h-full w-full">
-            {accesLogo}
-            <p className="absolute bottom-5">Accesible</p>
-          </div>
-        </div>
-
-        <div className="box relative row-span-2 h-full">
+        <div className="box relative row-span-2 w-full h-full">
           <div className="content h-full w-full">
             {boltLogo}
-            <p className="absolute bottom-5 text-xl">Fast animations </p>
+            <p className="absolute bottom-2 text-center md:text-xl">
+              Fast animations
+            </p>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content relative h-full min-w-full p-7">
+            {tailwindLogo}
+            <p className="absolute bottom-2">Tailwind</p>
           </div>
         </div>
 
-        <div className="box col-span-2">
-          <div className="content h-20 text-3xl">Pure Css Components</div>
+        <div className="box">
+          <div className="content relative h-full w-full p-7">
+            {accesLogo}
+            <p className="absolute bottom-2">Accesible</p>
+          </div>
         </div>
+
         <div className="box col-span-3">
-          <div className="content h-20 text-3xl">
+          <div className="content h-20 p-10 text-3xl">
             {mobileLogo}
             <p>Responsive</p>
           </div>
