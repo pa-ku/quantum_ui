@@ -14,7 +14,6 @@ export default function Cards() {
           title={"Accent"}
           text={
             <p>
-              {" "}
               - <AccentText text={"animate-pulse"} /> is a good alternative for
               an animation.
               <br />
