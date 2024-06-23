@@ -79,9 +79,14 @@ body {
   --secundary-800: #650094;
   --secundary-900: #420061;
   --secundary-1000: #1f002e;
+
+  --code-violet-400: #bd2eff;
+  --code-violet-500: #170221;
+  --code-blue-400: #2f51b1;
+  --code-blue-500: #111727;
 }
 
-.animate-rotate{
+.animate-rotate {
   animation: rotate 3s linear infinite;
 }
 
@@ -146,25 +151,8 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.animate-chroma {
-  background: linear-gradient(
-    to left,
-    var(--primary-500),
-    var(--primary-300),
-    var(--primary-100),
-    var(--primary-300),
-    var(--primary-500)
-  );
-  background-size: 1200%;
-}
-
 .rotate-card:hover {
   rotate: -1 2 0 25deg;
-}
-
-.animate-chroma:hover {
-  animation: gradient 30s linear infinite;
-  box-shadow: -5px 5px 20px #333;
 }
 
 .chroma:hover {
@@ -181,11 +169,17 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0px 0px 10px #ffffff3c;
 }
 
-@keyframes gradient {
-  from {
-    background-position: 0%;
-  }
+.animate-chroma {
+  animation: gradient 30s linear infinite;
+  background: linear-gradient(
+    to left,
+    #f8baa3,#ef6676,#ee4566,
+    #ef6676,#f8baa3
+  );
+  transition: 300ms;
+  background-size: 2000%;}
 
+@keyframes gradient {
   to {
     background-position: 1200%;
   }
@@ -217,14 +211,8 @@ h2 {
 }
 
 @keyframes glow {
-  0% {
-    box-shadow: 0px 0px 20px #ffffff00;
-  }
   50% {
     box-shadow: 0px 0px 20px #ffffff79;
-  }
-  100% {
-    box-shadow: 0px 0px 20px #ffffff00;
   }
 }
 

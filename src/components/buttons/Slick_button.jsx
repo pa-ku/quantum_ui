@@ -6,9 +6,7 @@ export default function Slick_button() {
      Fancy
 </button>`;
 
-const codeCss = `//Css
-
-@property --color-1 {
+const codeCss = `@property --color-1 {
   syntax: "<color>";
   inherits: true;
   initial-value: #fff;

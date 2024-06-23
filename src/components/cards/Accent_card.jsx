@@ -8,10 +8,13 @@ export default function Accent_card() {
     <div class="flex h-full w-full 
     items-center justify-center rounded-xl
     bg-gray-900 mix-blend-multiply">
-    <p className="text-xl">Quantum</p>
+     <p className="text-xl">
+     Quantum
+     </p>
     </div>
 
-    <span class="-z-10 absolute h-80 w-80 animate-spin 
+    <span class="animate-rotate -z-10
+    absolute h-80 w-80 animate-spin 
     rounded-full bg-gradient-to-r
     from-[#24c295] to-[#bd2eff]">
     </span>
@@ -49,11 +52,10 @@ export default function Accent_card() {
             <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
           </svg>
         </div>
-        <span className="absolute -z-10 h-80 w-80 rounded-full bg-gradient-to-r from-[#24c295] to-[#bd2eff] animate-rotate"></span>
+        <span className="animate-rotate absolute -z-10 h-80 w-80 rounded-full bg-gradient-to-r from-[#24c295] to-[#bd2eff]"></span>
       </div>
       <CodeBlock code={codeBlock} />
-      <CodeBlock code={codeCss} language={'css'} />
+      <CodeBlock code={codeCss} language={"css"}/>
     </>
   );
 }
-

@@ -1,7 +1,8 @@
 import CodeBlock from "../CodeBlock";
 
 export default function Opacity_anim() {
-  const codeBlock = `animation: opacity 2s linear infinite;
+  const codeBlock = `.animate-opacity{
+  animation: opacity 2s linear infinite;}
 
   @keyframes opacity{
     from{
@@ -13,7 +14,7 @@ export default function Opacity_anim() {
 
   return (
     <>
-      <div className="opacity h-20 w-20 rounded-xl bg-primary-300 opacity-0"></div>
+      <div className="opacity h-20 w-20 rounded-xl bg-primary-300"></div>
       <CodeBlock code={codeBlock} language={"css"} />
     </>
   );
