@@ -3,13 +3,13 @@ export default function Home() {
     <>
       <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
-        <NewBanner />
+        <BentoBox />
       </main>
     </>
   );
 }
 
-function NewBanner() {
+function BentoBox() {
   return (
     <>
       <div className="grid">
