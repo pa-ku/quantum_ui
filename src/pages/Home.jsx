@@ -95,7 +95,7 @@ function BentoBox() {
 
   return (
     <>
-      <div className="grid">
+      <div className="grid shadow-center shadow-black">
         <div className="box">
           <div className="content relative h-full min-w-full">
             {tailwindLogo}
