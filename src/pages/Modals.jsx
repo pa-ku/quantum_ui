@@ -59,6 +59,7 @@ function closeModal() {
                 CLOSE
               </button>
             </dialog>
+            
           </>
         }
       >
