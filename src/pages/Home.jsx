@@ -99,7 +99,7 @@ function BentoBox() {
             Pure Css Components
           </div>
         </div>
-        <div className="box relative row-span-2 w-full h-full">
+        <div className="box relative row-span-2 h-full w-full">
           <div className="content h-full w-full">
             {boltLogo}
             <p className="absolute bottom-2 text-center md:text-xl">
@@ -108,7 +108,7 @@ function BentoBox() {
           </div>
         </div>
         <div className="box">
-          <div className="content relative h-full min-w-full p-7">
+          <div className="content relative h-full min-w-full p-5">
             {tailwindLogo}
             <p className="absolute bottom-2">Tailwind</p>
           </div>
