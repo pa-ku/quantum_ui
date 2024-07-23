@@ -33,7 +33,7 @@ export default function Modern_input() {
 
       <div className="relative flex h-max w-max items-center justify-start">
         <input
-          type="text"
+          type="password"
           className="text-red peer rounded-xl border-[1px] border-transparent bg-gray-800 px-3 py-2 caret-[#24c295] outline-none focus-visible:border-[#24c295]"
           placeholder=" "
         />
