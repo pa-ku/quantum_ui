@@ -2,7 +2,7 @@ import CodeBlock from "../CodeBlock";
 
 export default function Chroma_anim() {
   const codeBlock = `.animate-chroma{
-  animation: gradient 30s linear infinite;
+  animation: chroma 30s linear infinite;
   background-size: 2000%;
   background: linear-gradient(
     to left,#f8baa3,#ef6676,

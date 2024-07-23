@@ -1,5 +1,10 @@
 import { Highlight, themes } from "prism-react-renderer";
 export default function CodeBlock({ code, language }) {
+  function handleCopy() {
+    navigator.clipboard
+      .writeText(code)
+  }
+
   return (
     <>
       <Highlight
@@ -10,8 +15,15 @@ export default function CodeBlock({ code, language }) {
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
             open
-            className={`${language ? "bg-[var(--code-blue-500)] shadow-[var(--code-blue-400)]" : "bg-[var(--code-violet-500)] shadow-[var(--code-violet-400)] "} w-full overflow-auto rounded-xl p-2 text-xs shadow-center-10 md:px-4 md:text-base`}
+            className={`${language ? "bg-[var(--code-blue-500)]" : "shadow-[var bg-[var(--code-violet-500)]"} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
+            <button
+              className="absolute left-3 top-1 opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100"
+              onClick={handleCopy}
+            >
+              Copy
+            </button>
+
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line })}>
                 {line.map((token, key) => (
