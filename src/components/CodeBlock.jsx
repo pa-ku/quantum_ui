@@ -15,7 +15,7 @@ export default function CodeBlock({ code, language }) {
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
             open
-            className={`${language ? "bg-[var(--code-blue-500)]" : "shadow-[var bg-[var(--code-violet-500)]"} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
+            className={`${language ? "bg-[var(--code-blue-500)]" : "bg-[var(--code-violet-500)]"} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
             <button
               className="absolute left-3 top-1 opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100"

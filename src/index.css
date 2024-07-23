@@ -107,7 +107,7 @@ body {
 
 pre::-webkit-scrollbar {
   background-color: #111;
-  height: 13px;
+  height: 10px;
   border-radius: 0px 0px 50% 50%;
 }
 pre::-webkit-scrollbar-thumb {
