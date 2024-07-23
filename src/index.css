@@ -323,3 +323,18 @@ h2 {
   border-radius: 5px;
 }
 
+.animate-copy {
+  animation: copy 200ms ;
+}
+
+@keyframes copy {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}

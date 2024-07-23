@@ -1,10 +1,20 @@
 import { Highlight, themes } from "prism-react-renderer";
+import { useState } from "react";
 export default function CodeBlock({ code, language }) {
-  function handleCopy() {
-    navigator.clipboard
-      .writeText(code)
-  }
+  const [copy, setCopy] = useState("Copy");
+  const [isDisabled, setIsDisabled] = useState(false);
 
+  function handleCopy() {
+    if (isDisabled === false) {
+      navigator.clipboard.writeText(code);
+      setIsDisabled(true); // Deshabilitar el botón
+      setCopy("Copied!");
+    }
+    setTimeout(() => {
+      setCopy("Copy");
+      setIsDisabled(false); // Habilitar el botón nuevamente
+    }, 1000);
+  }
   return (
     <>
       <Highlight
@@ -18,10 +28,10 @@ export default function CodeBlock({ code, language }) {
             className={`${language ? "bg-[var(--code-blue-500)]" : "bg-[var(--code-violet-500)]"} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
             <button
-              className="absolute left-3 top-1 opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100"
+              className={`absolute left-3 top-1 opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100`}
               onClick={handleCopy}
             >
-              Copy
+              {copy}
             </button>
 
             {tokens.map((line, i) => (
