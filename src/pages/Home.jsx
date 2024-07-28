@@ -59,7 +59,7 @@ function BentoBox() {
 
   const boltLogo = (
     <svg
-      className="h-full w-full md:h-20 md:w-20"
+      className="h-full w-full md:p-9"
       viewBox="0 0 24 24"
       stroke-width="0.5"
       stroke="#ffffff"

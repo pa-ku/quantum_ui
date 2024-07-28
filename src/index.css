@@ -274,12 +274,12 @@ h2 {
 .chroma {
   animation: rotate 5s linear infinite;
   width: 50em;
-  translate: -50px 0px;
+  translate: -40px 0px;
   height: 50em;
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-
+/*   background-image: linear-gradient(90deg, #2ae3ae, #c958fd); */
   background-image: linear-gradient(90deg, #2ae3ae, #c958fd);
 }
 
@@ -321,6 +321,11 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  transition: 300ms;
+  padding-block: 20px;
+}
+.content:hover{
+  background-color: #212835;
 }
 
 .animate-copy {
