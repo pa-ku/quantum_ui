@@ -26,7 +26,7 @@ export default function Heart_Checkbox() {
     <>
       <label
         htmlFor="favorite"
-        className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-red-400 p-0"
+        className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-primary-400 p-0"
       >
         <input
           id="favorite"
@@ -34,7 +34,7 @@ export default function Heart_Checkbox() {
           type="checkbox"
         />
         <svg
-          className="h-full w-full text-transparent duration-200 peer-checked:text-red-400"
+          className="h-full w-full text-transparent duration-200 peer-checked:text-primary-400"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           fill="currentColor"
