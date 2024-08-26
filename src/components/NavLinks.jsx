@@ -13,6 +13,7 @@ export default function NavLinks() {
   );
 }
 
+
 export function LinkComponent({ to, children }) {
   const navigate = useNavigate();
 
