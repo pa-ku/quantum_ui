@@ -1,43 +1,15 @@
-import { useNavigate } from "react-router-dom";
-import React from "react";
+import React from 'react'
+import { LinkButton } from './ui/LinkButton'
 export default function NavLinks() {
   return (
     <>
-      <LinkComponent to={"/cards"}>Cards</LinkComponent>
-      <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
-      <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
-      <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
-      <LinkComponent to={"/modals"}>Modals</LinkComponent>
-      <LinkComponent to={"/animations"}>Animations</LinkComponent>
-      {/*<LinkComponent to={"/forms"}>Forms</LinkComponent> */}
+      <LinkButton to={'/cards'}>Cards</LinkButton>
+      <LinkButton to={'/buttons'}>Buttons</LinkButton>
+      <LinkButton to={'/checkboxes'}>Checkboxes</LinkButton>
+      <LinkButton to={'/inputs'}>Inputs</LinkButton>
+      <LinkButton to={'/modals'}>Modals</LinkButton>
+      <LinkButton to={'/animations'}>Animations</LinkButton>
+      {/*<LinkButton to={"/forms"}>Forms</LinkButton> */}
     </>
-  );
-}
-
-type LinkTypes = {
-  to: string;
-  children: string;
-};
-
-export function LinkComponent({ to, children }: LinkTypes) {
-  const navigate = useNavigate();
-
-  const handleLinkClick = () => {
-    console.log(navigate);
-    navigate(to);
-  };
-
-  return (
-    <>
-      <div className="relative flex">
-        <p className="pointer-events-none z-10 px-3 py-0.5">{children}</p>
-        <input
-          className="absolute h-full w-full cursor-pointer appearance-none rounded-xl opacity-100 outline-1 outline-secundary-700 duration-150 checked:bg-secundary-800 checked:outline hover:outline"
-          name="sidebar"
-          onClick={handleLinkClick}
-          type="radio"
-        />
-      </div>
-    </>
-  );
+  )
 }
