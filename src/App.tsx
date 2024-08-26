@@ -1,15 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Buttons from "./pages/Buttons";
-import Home from "./pages/Home";
-import Cards from "./pages/Cards";
-import Inputs from "./pages/Inputs";
-import Forms from "./pages/Forms";
-import Colors from "./pages/Colors";
-import Animations from "./pages/Animations";
-import CheckBoxes from "./pages/CheckBoxes";
-import Modals from "./pages/Modals";
-import React from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Buttons from './pages/Buttons'
+import Home from './pages/Home'
+import Cards from './pages/Cards'
+import Inputs from './pages/Inputs'
+import Forms from './pages/Forms'
+import Animations from './pages/Animations'
+import CheckBoxes from './pages/CheckBoxes'
+import Modals from './pages/Modals'
+import React from 'react'
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
             <Route path="cards" element={<Cards />} />
             <Route path="inputs" element={<Inputs />} />
             <Route path="forms" element={<Forms />} />
-            <Route path="colors" element={<Colors />} />
             <Route path="modals" element={<Modals />} />
             <Route path="animations" element={<Animations />} />
             <Route path="checkboxes" element={<CheckBoxes />} />
@@ -30,5 +28,5 @@ export default function App() {
         </Routes>
       </BrowserRouter>
     </>
-  );
+  )
 }

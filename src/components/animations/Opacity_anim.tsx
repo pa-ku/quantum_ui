@@ -1,4 +1,5 @@
 import CodeBlock from "../CodeBlock";
+import React from "react";
 
 export default function Opacity_anim() {
   const codeBlock = `.animate-opacity{

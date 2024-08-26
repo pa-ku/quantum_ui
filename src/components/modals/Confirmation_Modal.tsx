@@ -1,5 +1,5 @@
 import React from "react";
-import useModal from "../hooks/useModal";
+import useModal from "../../hooks/useModal";
 import CodeBlock from "../CodeBlock";
 
 export default function Confirmation_modal() {

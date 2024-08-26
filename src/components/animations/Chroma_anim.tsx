@@ -1,4 +1,5 @@
 import CodeBlock from "../CodeBlock";
+import React from "react";
 
 export default function Chroma_anim() {
   const codeBlock = `.animate-chroma{

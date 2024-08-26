@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 @property --color-1 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
   initial-value: #fff;
 }
 
 @property --color-2 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
   initial-value: #fff;
 }
 
 .slick-button {
-  --color-1: #e0218c;
-  --color-2: #eaa221;
+  --color-1: var(--primary);
+  --color-2: var(--secundary);
   background-image: linear-gradient(40deg, var(--color-1), var(--color-2));
   transition:
     --color-1 2000ms,
@@ -24,19 +24,19 @@
 }
 
 .slick-button:hover {
-  --color-1: #eaa221;
-  --color-2: #e0218c;
+  --color-1: var(--secundary);
+  --color-2: var(--primary);
 }
 
 @font-face {
-  font-family: "Monserrat";
-  src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+  font-family: 'Monserrat';
+  src: url('../src/assets/fonts/Montserrat-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Monserrat";
-  src: url("../src/assets/fonts/Montserrat-Bold.ttf");
+  font-family: 'Monserrat';
+  src: url('../src/assets/fonts/Montserrat-Bold.ttf');
   font-weight: 800;
 }
 
@@ -49,8 +49,8 @@
 
 body {
   background-color: var(--background);
-  font-family: "Monserrat";
-  background-color: linear-gradient(to bottom "#fff", "#fff");
+  font-family: 'Monserrat';
+  background-color: linear-gradient(to bottom '#fff', '#fff');
 }
 /* 091713 */
 :root {
@@ -94,6 +94,16 @@ body {
 @keyframes rotate {
   to {
     rotate: 360deg;
+  }
+}
+
+.animate-glow {
+  animation: animate-glow 3s linear infinite;
+}
+
+@keyframes animate-glow {
+  50% {
+    box-shadow: 0px 0px 20px var(--primary);
   }
 }
 
@@ -192,10 +202,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section {
   position: relative;
-}
-
-h2 {
-  @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-4xl font-bold text-transparent;
 }
 
 .opacity {

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
 
 type ComponentTypes = {
-  children: string;
+  children: any;
   title: string;
-  text: string;
+  text?: string | ReactNode;
 };
 export default function ComponentTemplate({
   children,

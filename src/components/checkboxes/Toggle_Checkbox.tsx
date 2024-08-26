@@ -1,5 +1,5 @@
 import CodeBlock from "../CodeBlock";
-
+import React from "react";
 export default function ToggleBtn() {
   const codeBlock = `<input
   type="checkbox"

@@ -1,20 +1,20 @@
-import quantumLogo from "../assets/images/quantumLogo.webp";
-import { useState } from "react";
-import NavLinks from "./NavLinks";
-import { Link } from "react-router-dom";
-
+import quantumLogo from '../assets/images/quantumLogo.webp'
+import { useState } from 'react'
+import NavLinks from './NavLinks'
+import { Link } from 'react-router-dom'
+import React from 'react'
 export default function NavBarMobile() {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false)
 
   function handleMenu() {
-    setOpenMenu(!openMenu);
+    setOpenMenu(!openMenu)
   }
 
   return (
     <>
       <header className="fixed bottom-0 z-50 flex h-16 w-full items-center justify-between gap-8 bg-[var(--dark-200)] px-4 text-lg font-bold text-white md:hidden">
-        <Link to={"/"} className="flex h-6 items-center justify-center gap-2">
-          <img className="h7 w-10" src={quantumLogo} alt="" />
+        <Link to={'/'} className="flex h-6 items-center justify-center gap-2">
+          <img className="h7 w-10" src={quantumLogo.src} alt="" />
           Quantum
         </Link>
 
@@ -30,10 +30,10 @@ export default function NavBarMobile() {
         </div>
       </header>
       <nav
-        className={`${!openMenu && "translate-y-80"}  fixed bottom-0 left-0 flex h-max backdrop-blur-xl w-full flex-col gap-2 bg-[var(--dark-200)] p-5 pb-20 text-white opacity-90 duration-300 md:hidden`}
+        className={`${!openMenu && 'translate-y-80'} fixed bottom-0 left-0 flex h-max w-full flex-col gap-2 bg-[var(--dark-200)] p-5 pb-20 text-white opacity-90 backdrop-blur-xl duration-300 md:hidden`}
       >
         <NavLinks />
       </nav>
     </>
-  );
+  )
 }

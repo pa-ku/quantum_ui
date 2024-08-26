@@ -1,11 +1,10 @@
-
 import ThemeCheckbox from "../components/checkboxes/Theme_Checkbox";
 import TextCheckbox from "../components/checkboxes/Active_Checkbox";
 import ToggleBtn from "../components/checkboxes/Toggle_Checkbox";
 import Heart_Checkbox from "../components/checkboxes/Heart_Checkbox";
 import More_Checkbox from "../components/checkboxes/More_Checkbox";
 import ComponentTemplate from "../components/ComponentTemplate";
-
+import React from "react";
 import ComponentTitle from "../components/ComponentTitle";
 export default function CheckBoxes() {
   return (
@@ -28,7 +27,6 @@ export default function CheckBoxes() {
         <More_Checkbox />
       </ComponentTemplate>
 
-
       <ComponentTemplate
         title={"Favorite"}
         text={"Minimalistic Add to favourites Button"}
@@ -42,7 +40,6 @@ export default function CheckBoxes() {
       <ComponentTemplate title={"Toggle"} text={"Glows when active"}>
         <ToggleBtn />
       </ComponentTemplate>
-
     </>
   );
 }

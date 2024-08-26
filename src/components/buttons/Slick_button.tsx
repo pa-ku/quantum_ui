@@ -1,12 +1,12 @@
-import CodeBlock from "../CodeBlock";
-
+import CodeBlock from '../CodeBlock'
+import React from 'react'
 export default function Slick_button() {
   const codeBlock = `<button className="slick-button rounded-md px-5 py-3 text-xl
     text-white duration-300">
      Fancy
-</button>`;
+</button>`
 
-const codeCss = `@property --color-1 {
+  const codeCss = `@property --color-1 {
   syntax: "<color>";
   inherits: true;
   initial-value: #fff;
@@ -19,29 +19,27 @@ const codeCss = `@property --color-1 {
 }
 
 .slick-button {
-  --color-1: #e0218c;
-  --color-2: #eaa221;
-  background-image:linear-gradient(40deg,var(--color-1),var(--color-2));
+  --color-1: var(--primary);
+  --color-2: var(--secundary);
+  background-image:linear-gradient(40deg,var(--primary),var(--secundary));
   transition:
-    --color-1 2000ms,
-    --color-2 800ms;
+  --color-1 2000ms,
+  --color-2 800ms;
 }
 
 .slick-button:hover {
-  --color-1: #eaa221;
-  --color-2: #e0218c;
+  --color-1: var(--secundary);
+  --color-2: var(--primary);
 }
 `
 
   return (
     <>
-      <button className="group relative rounded-md px-5 py-3 text-xl text-white 
-      duration-300
-    slick-button">
-Subscribe
+      <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
+        Subscribe
       </button>
       <CodeBlock code={codeBlock} />
       <CodeBlock code={codeCss} language={'css'} />
     </>
-  );
+  )
 }

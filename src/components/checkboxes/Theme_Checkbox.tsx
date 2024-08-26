@@ -1,5 +1,5 @@
-import React from "react";
-import CodeBlock from "../CodeBlock";
+import React from 'react'
+import CodeBlock from '../CodeBlock'
 
 export default function ThemeCheckbox() {
   const codeBlock = `<div className="relative flex w-max 
@@ -22,7 +22,7 @@ export default function ThemeCheckbox() {
   peer-checked:opacity-100"
   src="https://cdn.icon-icons.com/icons2/3255/PNG/512/moon_stars_weather_night_icon_205756.png"
   alt=""/>
-</div>`;
+</div>`
 
   return (
     <>
@@ -37,12 +37,12 @@ export default function ThemeCheckbox() {
           alt=""
         />
         <img
-          className="pointer-events-none absolute h-full w-full opacity-0 invert -rotate-180 duration-300 peer-checked:rotate-0 peer-checked:opacity-100"
+          className="pointer-events-none absolute h-full w-full -rotate-180 opacity-0 invert duration-300 peer-checked:rotate-0 peer-checked:opacity-100"
           src="https://cdn.icon-icons.com/icons2/3255/PNG/512/moon_stars_weather_night_icon_205756.png"
           alt=""
         />
       </div>
       <CodeBlock code={codeBlock} />
     </>
-  );
+  )
 }

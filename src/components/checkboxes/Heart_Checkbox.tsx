@@ -1,4 +1,5 @@
-import CodeBlock from "../CodeBlock";
+import CodeBlock from '../CodeBlock'
+import React from 'react'
 
 export default function Heart_Checkbox() {
   const codeBlock = `<label
@@ -19,12 +20,12 @@ export default function Heart_Checkbox() {
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
         </svg>
-</label>`;
+</label>`
   return (
     <>
       <label
         htmlFor="favorite"
-        className="stroke-primary relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center p-0"
+        className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-primary p-0"
       >
         <input
           id="favorite"
@@ -32,7 +33,7 @@ export default function Heart_Checkbox() {
           type="checkbox"
         />
         <svg
-          className="peer-checked:text-primary h-full w-full text-transparent duration-200"
+          className="h-full w-full text-transparent duration-200 peer-checked:text-primary"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           fill="currentColor"
@@ -43,5 +44,5 @@ export default function Heart_Checkbox() {
       </label>
       <CodeBlock code={codeBlock} />
     </>
-  );
+  )
 }

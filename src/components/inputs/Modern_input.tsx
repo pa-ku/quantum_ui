@@ -1,4 +1,5 @@
 import CodeBlock from "../CodeBlock";
+import React from "react";
 
 export default function Modern_input() {
   const codeBlock = `<div className="relative flex h-max w-max items-center justify-start">

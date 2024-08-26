@@ -42,7 +42,7 @@ export default {
         monserrat: "Monserrat",
       },
       animation: {
-        glow: "glow 4s linear infinite",
+       
         opacity: "opacity 500ms forwards",
       },
       boxShadow: {
