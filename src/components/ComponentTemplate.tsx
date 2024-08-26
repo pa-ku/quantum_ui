@@ -1,4 +1,15 @@
-export default function ComponentTemplate({ children, title, text }) {
+import React from "react";
+
+type ComponentTypes = {
+  children: string;
+  title: string;
+  text: string;
+};
+export default function ComponentTemplate({
+  children,
+  title,
+  text,
+}: ComponentTypes) {
   return (
     <>
       <section className="relative flex h-full w-full items-start justify-center px-2">

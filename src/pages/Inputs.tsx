@@ -3,6 +3,7 @@ import InputSearch from "../components/inputs/Search_input";
 import ComponentTemplate from "../components/ComponentTemplate";
 import ComponentTitle from "../components/ComponentTitle";
 import Modern_input from "../components/inputs/Modern_input";
+import React from "react";
 export default function Inputs() {
   return (
     <>

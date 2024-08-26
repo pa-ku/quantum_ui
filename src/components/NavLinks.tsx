@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import React from "react";
 export default function NavLinks() {
   return (
     <>
@@ -13,8 +14,12 @@ export default function NavLinks() {
   );
 }
 
+type LinkTypes = {
+  to: string;
+  children: string;
+};
 
-export function LinkComponent({ to, children }) {
+export function LinkComponent({ to, children }: LinkTypes) {
   const navigate = useNavigate();
 
   const handleLinkClick = () => {

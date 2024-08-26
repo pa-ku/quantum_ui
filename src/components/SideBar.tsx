@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavLinks from "./NavLinks";
 import ColorHandler from "./ui/ColorHandler";
+import React from "react";
 
 export default function SideBar() {
   const [primary, setPrimary] = useState("#20ac84");

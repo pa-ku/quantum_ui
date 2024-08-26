@@ -5,6 +5,7 @@ import useModal from "../components/hooks/useModal";
 import Confirmation_modal from "../components/modals/Confirmation_Modal";
 import Contact_modal from "../components/modals/Contact_Modal";
 import Message_modal from "../components/modals/Message_Modal";
+import React from "react";
 
 export default function Modals() {
   const [refModal, openModal, closeModal] = useModal();

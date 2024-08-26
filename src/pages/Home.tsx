@@ -1,3 +1,4 @@
+import React from "react";
 export default function Home() {
   return (
     <>
@@ -44,11 +45,11 @@ function BentoBox() {
     <svg
       className="h-full w-full md:h-20 md:w-20"
       viewBox="0 0 24 24"
-      stroke-width="1"
+      strokeWidth="1"
       stroke="#ffffff"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -61,11 +62,11 @@ function BentoBox() {
     <svg
       className="h-full w-full md:p-9"
       viewBox="0 0 24 24"
-      stroke-width="0.5"
+      strokeWidth="0.5"
       stroke="#ffffff"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
@@ -76,11 +77,11 @@ function BentoBox() {
     <svg
       className="h-10 w-10 md:h-10 md:w-10"
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke="#ffffff"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11.5 21h-3.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" />

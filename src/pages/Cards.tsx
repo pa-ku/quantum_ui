@@ -3,7 +3,7 @@ import ComponentTitle from "../components/ComponentTitle";
 import Accent_card from "../components/cards/Accent_card";
 import AccentText from "../components/AccentText";
 import Product_card from "../components/cards/Product_card";
-
+import React from "react";
 
 export default function Cards() {
   return (

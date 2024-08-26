@@ -9,6 +9,7 @@ import Colors from "./pages/Colors";
 import Animations from "./pages/Animations";
 import CheckBoxes from "./pages/CheckBoxes";
 import Modals from "./pages/Modals";
+import React from "react";
 
 export default function App() {
   return (

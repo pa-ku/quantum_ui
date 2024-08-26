@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-
+import React from "react";
 import SideBar from "../components/SideBar";
 import { Outlet } from "react-router-dom";
 import NavBarMobile from "../components/NavBarMobile";

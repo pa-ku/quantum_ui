@@ -1,7 +1,7 @@
 import ComponentTemplate from "../components/ComponentTemplate";
 import ComponentTitle from "../components/ComponentTitle";
 import Slick_button from "../components/buttons/Slick_button";
-
+import React from "react";
 export default function Buttons() {
   return (
     <>
