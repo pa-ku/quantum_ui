@@ -43,7 +43,7 @@ $150
         </div>
         <div className="rounded-b-xl bg-slate-700 p-2">
           <p className="text-xl">$100</p>
-          <p className="text-secundary line-through">$150</p>
+          <p className="text-gray-400 line-through">$150</p>
           <h3 className="font-bold text-slate-200">Segway Ninebot Gt2</h3>
         </div>
       </div>
