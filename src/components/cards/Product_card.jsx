@@ -5,7 +5,7 @@ export default function Product_card() {
   shadow-gray-900">
   <div className="rounded-t-xl bg-white">
     <span className="absolute right-0 rounded-bl-xl 
-    rounded-tr-xl bg-green-300 px-3 
+    rounded-tr-xl bg-primary px-3 
     text-xl font-bold text-green-900">
    33%
     </span>
@@ -19,7 +19,7 @@ export default function Product_card() {
     <p className="text-xl">
 $100
     </p>
-    <p className="text-blue-300 line-through">
+    <p className="text-gray-400 line-through">
 $150
     </p>
     <h3 className="font-bold text-slate-200">
