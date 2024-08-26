@@ -20,7 +20,7 @@ export default function SideBar() {
         className={`fixed top-0 z-20 hidden h-svh w-52 flex-col gap-5 rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
       >
         <NavLinks />
-        <hr />
+        <hr className="border-slate-500" />
 
         <div className="relative flex items-center justify-center">
           <input

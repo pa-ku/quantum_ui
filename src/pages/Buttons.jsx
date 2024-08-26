@@ -12,12 +12,7 @@ export default function Buttons() {
         <Slick_button />
       </ComponentTemplate>
 
-      <ComponentTemplate
-        title={"Action"}
-        text={"Simple button with interaction"}
-      >
-        <ActionButton />
-      </ComponentTemplate>
+    
 
     </>
   );

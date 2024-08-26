@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 export default function NavLinks() {
   return (
     <>
+      <LinkComponent to={"/cards"}>Cards</LinkComponent>
       <LinkComponent to={"/buttons"}>Buttons</LinkComponent>
       <LinkComponent to={"/checkboxes"}>Checkboxes</LinkComponent>
       <LinkComponent to={"/inputs"}>Inputs</LinkComponent>
-      <LinkComponent to={"/cards"}>Cards</LinkComponent>
       <LinkComponent to={"/modals"}>Modals</LinkComponent>
       <LinkComponent to={"/animations"}>Animations</LinkComponent>
       {/*<LinkComponent to={"/forms"}>Forms</LinkComponent> */}
