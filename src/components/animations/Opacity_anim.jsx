@@ -14,7 +14,7 @@ export default function Opacity_anim() {
 
   return (
     <>
-      <div className="opacity h-20 w-20 rounded-xl bg-primary-300"></div>
+      <div className="opacity h-20 w-20 rounded-xl bg-primary"></div>
       <CodeBlock code={codeBlock} language={"css"} />
     </>
   );

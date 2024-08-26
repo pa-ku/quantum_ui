@@ -8,7 +8,9 @@ export default {
         dark: {
           200: "var(--dark-200)",
         },
+
         primary: {
+          DEFAULT: "var(--primary)",
           100: "var(--primary-100)",
           200: "var(--primary-200)",
           300: "var(--primary-300)",
@@ -22,6 +24,7 @@ export default {
           1000: "var(--primary-1000)",
         },
         secundary: {
+          DEFAULT: "var(--secundary)",
           100: "var(--secundary-100)",
           200: "var(--secundary-200)",
           300: "var(--secundary-300)",

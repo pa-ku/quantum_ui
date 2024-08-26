@@ -56,7 +56,8 @@ body {
 :root {
   --background: #171b24;
   --dark-200: #0e1117;
-
+  --primary: #20ac84;
+  --secundary: #cd61ff;
   --primary-100: #3ddbaf;
   --primary-200: #28d7a6;
   --primary-300: #24c295;
@@ -279,7 +280,7 @@ h2 {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-/*   background-image: linear-gradient(90deg, #2ae3ae, #c958fd); */
+  /*   background-image: linear-gradient(90deg, #2ae3ae, #c958fd); */
   background-image: linear-gradient(90deg, #2ae3ae, #c958fd);
 }
 
@@ -324,12 +325,12 @@ h2 {
   transition: 300ms;
   padding-block: 20px;
 }
-.content:hover{
+.content:hover {
   background-color: #212835;
 }
 
 .animate-copy {
-  animation: copy 200ms ;
+  animation: copy 200ms;
 }
 
 @keyframes copy {

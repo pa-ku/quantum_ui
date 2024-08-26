@@ -1,7 +1,6 @@
 import CodeBlock from "../CodeBlock";
 
 export default function Product_card() {
-
   const codeBlock = `<div className="relative w-56 shadow-md 
   shadow-gray-900">
   <div className="rounded-t-xl bg-white">
@@ -33,7 +32,7 @@ $150
     <>
       <div className="relative w-56 shadow-md shadow-gray-900">
         <div className="rounded-t-xl bg-white">
-          <span className="absolute right-0 rounded-bl-xl rounded-tr-xl bg-green-300 px-3 text-xl font-bold text-green-900">
+          <span className="bg-primary absolute right-0 rounded-bl-xl rounded-tr-xl px-3 text-xl font-bold">
             33%
           </span>
           <img
@@ -44,7 +43,7 @@ $150
         </div>
         <div className="rounded-b-xl bg-slate-700 p-2">
           <p className="text-xl">$100</p>
-          <p className="text-blue-300 line-through">$150</p>
+          <p className="text-secundary line-through">$150</p>
           <h3 className="font-bold text-slate-200">Segway Ninebot Gt2</h3>
         </div>
       </div>

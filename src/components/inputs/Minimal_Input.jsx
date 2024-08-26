@@ -8,14 +8,14 @@ export default function MinimalInput() {
       text-white outline-none 
       placeholder:text-gray-200 
       focus:bg-gray-800 
-      focus-visible:border-[#24c295]"
+      focus-visible:border-primary"
     placeholder="Input"
   />`;
   return (
     <>
       <input
         type="text"
-        className="rounded-xl border-[1px] border-transparent bg-gray-800 px-4 py-2 text-white outline-none placeholder:text-gray-200 focus:bg-gray-800 focus-visible:border-[#24c295]"
+        className="rounded-xl border-[1px] border-transparent bg-gray-800 px-4 py-2 text-white outline-none placeholder:text-gray-200 focus:bg-gray-800 focus-visible:border-primary"
         placeholder="Input"
       />
       <CodeBlock code={codeBlock} />

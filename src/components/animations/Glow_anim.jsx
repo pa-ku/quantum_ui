@@ -11,7 +11,7 @@ export default function Glow_anim() {
 
   return (
     <>
-      <div className="glow h-20 w-20 rounded-xl bg-primary-300"></div>
+      <div className="glow h-20 w-20 rounded-xl bg-primary"></div>
       <CodeBlock code={codeBlock} language={"css"} />
     </>
   );
