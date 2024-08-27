@@ -1,30 +1,31 @@
-import { useState } from "react";
-import NavLinks from "./NavLinks";
-import ColorHandler from "./ui/ColorHandler";
-import React from "react";
-import { NavIconButton } from "./ui/NavIconButton";
+import { useState } from 'react'
+import NavLinks from './NavLinks'
+import ColorHandler from './ui/ColorHandler'
+import React from 'react'
+import { NavIconButton } from './ui/NavIconButton'
 
 export default function SideBar() {
-  const [primary, setPrimary] = useState("#20ac84");
-  const [secundary, setSecundary] = useState("#cd61ff");
-  const [showCustom, setSowCustom] = useState(false);
+  const [primary, setPrimary] = useState('#20ac84')
+  const [secundary, setSecundary] = useState('#cd61ff')
+  const [showCustom, setSowCustom] = useState(false)
 
   const changePrimary = (e) => {
-    setPrimary(e.target.value);
-    document.documentElement.style.setProperty("--primary", primary);
-  };
+    setPrimary(e.target.value)
+    document.documentElement.style.setProperty('--primary', primary)
+  }
   const changeSecundary = (e) => {
-    setSecundary(e.target.value);
-    document.documentElement.style.setProperty("--secundary", secundary);
-  };
+    setSecundary(e.target.value)
+    document.documentElement.style.setProperty('--secundary', secundary)
+  }
   return (
     <>
       <aside
-        className={`fixed top-0 z-20 hidden h-svh w-52 flex-col gap-5 rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
+        className={`fixed top-0 z-20 hidden h-svh w-52 flex-col rounded-none bg-[var(--dark-200)] px-3 py-5 text-lg text-white opacity-95 md:flex`}
       >
-        <NavLinks />
-        <hr className="border-slate-500" />
-
+        <div className="flex flex-col gap-3 pb-3">
+          <NavLinks />
+        </div>
+        <hr className="border-slate-500 pb-2" />
         <NavIconButton
           onChange={() => setSowCustom(!showCustom)}
         ></NavIconButton>
@@ -44,5 +45,5 @@ export default function SideBar() {
         )}
       </aside>
     </>
-  );
+  )
 }
