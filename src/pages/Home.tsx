@@ -40,7 +40,7 @@ export default function Home() {
         <div>
           <div className="pb-10">
             <h2 className="pb-2 text-center text-4xl font-bold">
-              Being Quantum is Fast
+              Being Quantum is Easy
             </h2>
             <p className="text-slate-400">
               To get started, you should have
