@@ -83,7 +83,7 @@ export default function Documentation() {
             It's possible to add gradients or intermediate values for these
             colors.
           </p>
-          <CodeBlock code={TALWIND_COLORS_TWO} />
+          <CodeBlock code={TAILWIND_COLORS_TWO} />
           <CodeBlock language="css" code={CSS_COLORS_TWO} />
         </div>
         <Accesibility />
