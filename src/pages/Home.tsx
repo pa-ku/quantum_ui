@@ -36,6 +36,7 @@ export default function Home() {
     <>
       <main className="flex w-full flex-col items-center justify-center gap-24 px-4 xl:w-[42em]">
         <Banner />
+
         <BentoBox />
         <div>
           <div className="pb-10">
@@ -161,6 +162,10 @@ function Banner() {
   return (
     <>
       <div className="flex h-40 flex-col items-center justify-center">
+        <div className=" animate absolute flex opacity-10">
+          <div className="abosolute animate-left size-52 rounded-full bg-primary-400 blur-3xl mix-blend-difference"></div>
+          <div className="abosolute animate-right right-0 size-52 rounded-full bg-secundary-800 blur-2xl"></div>
+        </div>
         <h1 className="flex h-full w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-6xl font-semibold tracking-tight text-transparent md:text-7xl">
           Design made real
         </h1>

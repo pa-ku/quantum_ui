@@ -350,3 +350,37 @@ body::-webkit-scrollbar-thumb:hover {
     scale: 1;
   }
 }
+
+.animate-left {
+  animation: animate-left 20s infinite;
+}
+
+@keyframes animate-left {
+  0% {
+    translate: 0px;
+  }
+
+  50% {
+    translate: 400px;
+  }
+  0% {
+    translate: 0px;
+  }
+}
+
+@keyframes animate-right {
+  0% {
+    translate: 0px;
+  }
+
+  50% {
+    translate: -400px;
+  }
+  0% {
+    translate: 0px;
+  }
+}
+
+.animate-right {
+  animation: animate-right 20s infinite;
+}
