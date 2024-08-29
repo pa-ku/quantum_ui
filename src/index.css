@@ -320,8 +320,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .content {
- 
- 
   background-color: var(--background);
   mix-blend-mode: darken;
   width: 100%;
@@ -332,7 +330,6 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 300ms;
   padding-block: 20px;
 }
-
 
 .animate-copy {
   animation: copy 200ms;

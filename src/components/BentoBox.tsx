@@ -6,7 +6,7 @@ export default function BentoBox() {
       viewBox="0 0 24 24"
       strokeWidth="0.5"
       stroke="currentColor"
-      fill="#fff"
+      fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
@@ -75,7 +75,7 @@ export default function BentoBox() {
         <div className="box col-span-2">
           <div className="content h-full p-6 text-center text-2xl md:text-4xl">
             {mobileLogo}
-            <p>Responsive</p>
+            <p className="ml-1">Responsive</p>
           </div>
         </div>
         <div className="box relative row-span-2 h-full w-full">
@@ -94,10 +94,9 @@ export default function BentoBox() {
         </div>
 
         <div className="box">
-          <div className="content relative h-full w-full p-7 text-xl md:text-2xl">
-            {accesLogo}
-            <p className="absolute bottom-2">Accesible</p>
-          </div>
+          <p className="content relative h-full w-full p-7 text-xl md:text-2xl">
+            Accesible
+          </p>
         </div>
 
         <div className="box col-span-3">
