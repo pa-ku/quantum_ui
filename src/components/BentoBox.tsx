@@ -87,7 +87,7 @@ export default function BentoBox() {
           </div>
         </div>
         <div className="box">
-          <div className="content relative h-full min-w-full p-5 text-xl md:text-2xl">
+          <div className="content relative h-full min-w-full p-5 text-lg md:text-2xl">
             {tailwindLogo}
             <p className="absolute bottom-2">Tailwind</p>
           </div>
