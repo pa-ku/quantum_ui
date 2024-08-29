@@ -1,10 +1,10 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, { ReactElement, ReactNode } from 'react'
 
 type ComponentTypes = {
-  children: any;
-  title: string;
-  text?: string | ReactNode;
-};
+  children: any
+  title: string
+  text?: string | ReactNode
+}
 export default function ComponentTemplate({
   children,
   title,
@@ -24,5 +24,5 @@ export default function ComponentTemplate({
         </div>
       </section>
     </>
-  );
+  )
 }

@@ -14,7 +14,7 @@ export default function NavBarMobile() {
     <>
       <header className="fixed bottom-0 z-50 flex h-16 w-full items-center justify-between gap-8 bg-[var(--dark-200)] px-4 text-lg font-bold text-white md:hidden">
         <Link to={'/'} className="flex h-6 items-center justify-center gap-2">
-          <img className="h7 w-10" src={quantumLogo.src} alt="" />
+          <img className="h7 w-10" src={quantumLogo} alt="logo de quantum" />
           Quantum
         </Link>
 

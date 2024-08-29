@@ -15,8 +15,10 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout home />}>
             <Route path="/" index element={<Home />} />
+          </Route>
+          <Route path="/" element={<Layout />}>
             <Route path="buttons" element={<Buttons />} />
             <Route path="cards" element={<Cards />} />
             <Route path="inputs" element={<Inputs />} />

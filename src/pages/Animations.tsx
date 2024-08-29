@@ -9,7 +9,7 @@ export default function Animations() {
   return (
     <>
       <ComponentTitle>Animations</ComponentTitle>
-      <ComponentTemplate title={'Chroma'} >
+      <ComponentTemplate title={'Chroma'}>
         <Chroma_anim />
       </ComponentTemplate>
 

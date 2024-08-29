@@ -1,22 +1,24 @@
-import NavBar from "../components/NavBar";
-import React from "react";
-import SideBar from "../components/SideBar";
-import { Outlet } from "react-router-dom";
-import NavBarMobile from "../components/NavBarMobile";
+import NavBar from '../components/NavBar'
+import React from 'react'
+import SideBar from '../components/SideBar'
+import { Outlet } from 'react-router-dom'
+import NavBarMobile from '../components/NavBarMobile'
 
-export default function Layout() {
+export default function Layout({ home }) {
   return (
     <>
       <div className="flex">
         <SideBar />
         <div className="flex w-full flex-col items-center justify-start">
           <NavBar />
-          <section className="flex w-full flex-col items-center gap-20 py-10 pb-28 text-white">
+          <div
+            className={`${home ? '' : 'py-10'} flex w-full flex-col items-center gap-20 pb-28 text-white`}
+          >
             <Outlet />
             <NavBarMobile />
-          </section>
+          </div>
         </div>
       </div>
     </>
-  );
+  )
 }

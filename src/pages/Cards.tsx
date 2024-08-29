@@ -8,33 +8,35 @@ import Showcase_card from '../components/cards/Showcase_card'
 export default function Cards() {
   return (
     <>
-      <ComponentTitle>Cards</ComponentTitle>
-      <div className="wrapper">
-        <ComponentTemplate
-          title={'Accent'}
-          text={
-            "Changing 'mix-blend' to darken or dark-light makes the logo interact in different ways with the background."
-          }
-        >
-          <Accent_card />
-        </ComponentTemplate>
 
-        <ComponentTemplate
-          title={'Product'}
-          text={
-            'Showcasing the selling item, you have the option to automaticly calculate the discount label.'
-          }
-        >
-          <Product_card />
-        </ComponentTemplate>
+        <ComponentTitle>Cards</ComponentTitle>
+        <div className="wrapper">
+          <ComponentTemplate
+            title={'Accent'}
+            text={
+              "Changing 'mix-blend' to darken or dark-light makes the logo interact in different ways with the background."
+            }
+          >
+            <Accent_card />
+          </ComponentTemplate>
 
-        <ComponentTemplate
-          title={'Showcase'}
-          text={'Minimalistic Card with key information'}
-        >
-          <Showcase_card />
-        </ComponentTemplate>
-      </div>
+          <ComponentTemplate
+            title={'Product'}
+            text={
+              'Showcasing the selling item, you have the option to automaticly calculate the discount label.'
+            }
+          >
+            <Product_card />
+          </ComponentTemplate>
+
+          <ComponentTemplate
+            title={'Showcase'}
+            text={'Minimalistic Card with key information'}
+          >
+            <Showcase_card />
+          </ComponentTemplate>
+        </div>
+    
     </>
   )
 }
