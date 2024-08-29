@@ -322,6 +322,7 @@ body::-webkit-scrollbar-thumb:hover {
 .content {
   background-color: var(--dark-200);
   background-color: #1d232e;
+  background-color: var(--background);
   mix-blend-mode: darken;
   width: 100%;
   display: flex;
