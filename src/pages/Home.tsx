@@ -250,7 +250,7 @@ function BentoBox() {
     <>
       <div className="grid shadow-center shadow-slate-800">
         <div className="box col-span-2">
-          <div className="content h-full p-6 text-center text-xl md:text-4xl">
+          <div className="content h-full p-6 text-center text-2xl md:text-4xl">
             {mobileLogo}
             <p>Responsive</p>
           </div>
@@ -258,27 +258,27 @@ function BentoBox() {
         <div className="box relative row-span-2 h-full w-full">
           <div className="content h-full w-full">
             {boltLogo}
-            <p className="absolute bottom-2 left-0 text-center [writing-mode:vertical-lr] md:text-3xl">
+            <p className="  absolute left-0 w-full text-center text-xl [writing-mode:vertical-lr] md:text-3xl">
               Fast animations
             </p>
           </div>
         </div>
         <div className="box">
-          <div className="content relative h-full min-w-full p-5 text-2xl">
+          <div className="content relative h-full min-w-full p-5 text-xl md:text-2xl">
             {tailwindLogo}
             <p className="absolute bottom-2">Tailwind</p>
           </div>
         </div>
 
         <div className="box">
-          <div className="content relative h-full w-full p-7 text-2xl">
+          <div className="content relative h-full w-full p-7 text-xl md:text-2xl">
             {accesLogo}
             <p className="absolute bottom-2">Accesible</p>
           </div>
         </div>
 
         <div className="box col-span-3">
-          <div className="content h-20 p-10 text-3xl">Pure Css Components</div>
+          <div className="content text-center h-20 p-10 text-2xl md:text-3xl">Pure Css Components</div>
         </div>
 
         <span className="chroma"></span>
