@@ -2,7 +2,7 @@ import CodeBlock from './CodeBlock'
 import React from 'react'
 
 export default function Documentation() {
-  const tailwindColorCode = `theme: {
+  const TAILWIND_COLORS = `theme: {
         extend: {
       colors: {
             primary: {
@@ -12,12 +12,12 @@ export default function Documentation() {
               DEFAULT: 'var(--secundary)',
             },},},}`
 
-  const cssCode = `:root{
+  const CSS_COLORS = `:root{
       --primary: #20ac84;
       --secundary: #cd61ff;
     }`
 
-  const tailwindConfigTwo = ` colors: {
+  const TAILWIND_COLORS_TWO = ` colors: {
             primary: {
               DEFAULT: "var(--primary)",
               100: "var(--primary-100)",
@@ -26,7 +26,7 @@ export default function Documentation() {
             },
        }`
 
-  const cssCodePartTwo = `:root{
+  const CSS_COLORS_TWO = `:root{
       --primary: #20ac84;
       --primary-100: #20ac84;
       --primary-200: #20ac84;
@@ -67,7 +67,7 @@ export default function Documentation() {
           </p>
         </div>
         <div className="py-5">
-          <CodeBlock code={tailwindColorCode} />
+          <CodeBlock code={TAILWIND_COLORS} />
         </div>
 
         <div className="py-5">
@@ -75,7 +75,7 @@ export default function Documentation() {
             In the global CSS file, create variables for the Primary and
             Secondary colors.
           </p>
-          <CodeBlock language="css" code={cssCode} />
+          <CodeBlock language="css" code={CSS_COLORS} />
         </div>
 
         <div>
@@ -83,8 +83,8 @@ export default function Documentation() {
             It's possible to add gradients or intermediate values for these
             colors.
           </p>
-          <CodeBlock code={tailwindConfigTwo} />
-          <CodeBlock language="css" code={cssCodePartTwo} />
+          <CodeBlock code={TALWIND_COLORS_TWO} />
+          <CodeBlock language="css" code={CSS_COLORS_TWO} />
         </div>
         <Accesibility />
       </div>
