@@ -15,7 +15,7 @@ export default function Confirmation_modal() {
   </button>
    <button
     onClick={closeModal}
-    className="w-20 rounded-xl bg-secundary-400 px-3 py-2 hover:brightness-110">
+    className="w-20 rounded-xl bg-primary px-3 py-2 hover:brightness-110">
       Yes 
    </button>
   </div>
@@ -25,7 +25,7 @@ export default function Confirmation_modal() {
     <>
       <button
         onClick={openModal}
-        className="rounded-xl bg-primary-400 px-3 py-2 hover:brightness-110"
+        className="rounded-xl bg-primary px-3 py-2 hover:brightness-110"
       >
         Open Modal
       </button>
@@ -43,7 +43,7 @@ export default function Confirmation_modal() {
           </button>
           <button
             onClick={closeModal}
-            className="w-20 rounded-xl bg-primary-400 px-3 py-2 hover:brightness-110"
+            className="w-20 rounded-xl bg-primary px-3 py-2 hover:brightness-110"
           >
             Yes
           </button>
