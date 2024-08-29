@@ -183,7 +183,7 @@ function BentoBox() {
       viewBox="0 0 24 24"
       strokeWidth="0.5"
       stroke="currentColor"
-      fill="none"
+      fill="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
@@ -194,18 +194,21 @@ function BentoBox() {
 
   const accesLogo = (
     <svg
-      className="h-full w-full md:h-20 md:w-20"
+      width="70"
+      height="70"
       viewBox="0 0 24 24"
-      strokeWidth="1"
-      stroke="#ffffff"
+      stroke-width="1.5"
+      stroke="#fff"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-      <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
-      <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+      <path
+        d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.051 6.844a1 1 0 0 0 -1.152 -.663l-.113 .03l-2.684 .895l-2.684 -.895l-.113 -.03a1 1 0 0 0 -.628 1.884l.109 .044l2.316 .771v.976l-1.832 2.75l-.06 .1a1 1 0 0 0 .237 1.21l.1 .076l.101 .06a1 1 0 0 0 1.21 -.237l.076 -.1l1.168 -1.752l1.168 1.752l.07 .093a1 1 0 0 0 1.653 -1.102l-.059 -.1l-1.832 -2.75v-.977l2.316 -.771l.109 -.044a1 1 0 0 0 .524 -1.221zm-3.949 -4.184a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0 -3z"
+        stroke-width="0"
+        fill="currentColor"
+      />
     </svg>
   )
 
@@ -247,37 +250,35 @@ function BentoBox() {
     <>
       <div className="grid shadow-center shadow-slate-800">
         <div className="box col-span-2">
-          <div className="content h-full p-6 text-center text-xl md:text-3xl">
-            Pure Css Components
+          <div className="content h-full p-6 text-center text-xl md:text-4xl">
+            {mobileLogo}
+            <p>Responsive</p>
           </div>
         </div>
         <div className="box relative row-span-2 h-full w-full">
           <div className="content h-full w-full">
             {boltLogo}
-            <p className="absolute bottom-2 text-center md:text-xl">
+            <p className="absolute bottom-2 left-0 text-center [writing-mode:vertical-lr] md:text-3xl">
               Fast animations
             </p>
           </div>
         </div>
         <div className="box">
-          <div className="content relative h-full min-w-full p-5">
+          <div className="content relative h-full min-w-full p-5 text-2xl">
             {tailwindLogo}
             <p className="absolute bottom-2">Tailwind</p>
           </div>
         </div>
 
         <div className="box">
-          <div className="content relative h-full w-full p-7">
+          <div className="content relative h-full w-full p-7 text-2xl">
             {accesLogo}
             <p className="absolute bottom-2">Accesible</p>
           </div>
         </div>
 
         <div className="box col-span-3">
-          <div className="content h-20 p-10 text-3xl">
-            {mobileLogo}
-            <p>Responsive</p>
-          </div>
+          <div className="content h-20 p-10 text-3xl">Pure Css Components</div>
         </div>
 
         <span className="chroma"></span>
