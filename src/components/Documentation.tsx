@@ -36,8 +36,8 @@ export default function Documentation() {
     <>
       <div>
         <div className="pb-10">
-          <h2 className="pb-2 text-center text-3xl font-bold lg:text-4xl">
-            Being Quantum is Easy
+          <h2 className="pb-2 text-center text-4xl font-bold">
+            Being Quantum <br className="lg:hidden" /> is Easy
           </h2>
           <p className="text-slate-400">
             To get started, you should have
