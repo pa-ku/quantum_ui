@@ -4,7 +4,7 @@ import Documentation from '../components/Documentation'
 export default function Home() {
   return (
     <>
-      <main className="relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-4 py-10 lg:overflow-visible xl:w-[42em]">
+      <main className="relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-4 py-10 lg:overflow-visible xl:w-1/2">
         <Banner />
         <div className="absolute top-0 flex w-full items-center justify-center opacity-10">
           <div className="abosolute animate-left size-52 rounded-full bg-primary-400 blur-3xl"></div>

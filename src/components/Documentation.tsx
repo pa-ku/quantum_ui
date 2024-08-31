@@ -48,8 +48,9 @@ export default function Documentation() {
             >
               Tailwind
             </a>
-            installed. A <span className="text-secundary-300">framework</span>
-            is not required, but you'll need to change
+            installed. A
+            <span className="mx-1 text-secundary-300"> framework</span>
+            is not required <br /> but you'll need to change
             <code>className</code> to <code>class</code> for CSS properties.
           </p>
         </div>
