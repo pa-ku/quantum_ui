@@ -9,7 +9,7 @@ export default function Layout({ home }) {
     <>
       <div className="flex">
         <SideBar />
-        <div className="flex w-full flex-col items-center justify-start">
+        <div className="flex w-full flex-col items-center justify-start lg:pl-48">
           <NavBar />
           <div
             className={`${home ? '' : 'py-10'} flex w-full flex-col items-center gap-20 pb-28 text-white`}

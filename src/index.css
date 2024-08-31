@@ -302,6 +302,7 @@ body::-webkit-scrollbar-thumb:hover {
 .grid {
   overflow: hidden;
   display: grid;
+  max-width: 650px;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
