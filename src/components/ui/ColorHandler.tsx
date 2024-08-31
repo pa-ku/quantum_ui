@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
 type ColorTypes = {
-  children: string;
-  value: string;
-  onChange: any;
-};
+  children: string
+  value: string
+  onChange: any
+}
 
 export default function ColorHandler({
   children,
@@ -13,7 +13,7 @@ export default function ColorHandler({
 }: ColorTypes) {
   return (
     <label
-      className={`${children === "Primary" ? "bg-primary" : "bg-secundary"} flex w-40 cursor-pointer flex-col items-center justify-center p-4 duration-200 hover:-translate-y-1`}
+      className={`${children === 'Primary' ? 'bg-primary' : 'bg-secundary'} flex w-40 cursor-pointer flex-col items-center justify-center p-4 duration-200 hover:-translate-y-1`}
     >
       <p className="font-bold"> {children}</p>
       <input
@@ -23,5 +23,5 @@ export default function ColorHandler({
         onChange={onChange}
       />
     </label>
-  );
+  )
 }

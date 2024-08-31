@@ -29,7 +29,7 @@ export default function SideBar() {
         ></NavIconButton>
 
         {showCustom && (
-          <footer className="fixed bottom-0 left-0 right-0 z-10 flex h-36 w-full items-center justify-center gap-2">
+          <footer className="fixed bottom-0 left-0 right-0 z-10 flex h-36 w-full items-center justify-center gap-2 lg:pl-32">
             <ColorHandler onChange={(e) => changePrimary(e)} value={primary}>
               Primary
             </ColorHandler>
