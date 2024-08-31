@@ -14,7 +14,7 @@ export default function Animations() {
       </ComponentTemplate>
 
       <ComponentTemplate
-        text={'Minimal animation to show an element'}
+        description={'Minimal animation to show an element'}
         title={'Opacity'}
       >
         <Opacity_anim />

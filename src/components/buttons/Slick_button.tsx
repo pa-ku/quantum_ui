@@ -1,5 +1,6 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
+import ComponentTemplate from '../ComponentTemplate'
 export default function Slick_button() {
   const codeBlock = `<button className="slick-button rounded-md px-5 py-3 text-xl
     text-white duration-300">
@@ -35,11 +36,18 @@ export default function Slick_button() {
 
   return (
     <>
-      <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
-        Subscribe
-      </button>
-      <CodeBlock code={codeBlock} />
-      <CodeBlock code={codeCss} language={'css'} />
+      <ComponentTemplate
+        title={'Slick'}
+        description={
+          'This button needs the @property from css to animate the colors of the background image. Changing the transition time creates different animations '
+        }
+      >
+        <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
+          Subscribe
+        </button>
+        <CodeBlock code={codeBlock} />
+        <CodeBlock code={codeCss} language={'css'} />
+      </ComponentTemplate>
     </>
   )
 }

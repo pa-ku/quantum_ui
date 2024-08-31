@@ -17,19 +17,19 @@ export default function CheckBoxes() {
         CheckBoxes
       </ComponentTitle>
 
-      <ComponentTemplate title={"Theme"} text={"Simple toggle theme"}>
+      <ComponentTemplate title={"Theme"} description={"Simple toggle theme"}>
         <ThemeCheckbox />
       </ComponentTemplate>
       <ComponentTemplate
         title={"More Button"}
-        text={"Used for clossing tags, or expansive containers"}
+        description={"Used for clossing tags, or expansive containers"}
       >
         <More_Checkbox />
       </ComponentTemplate>
 
       <ComponentTemplate
         title={"Favorite"}
-        text={"Minimalistic Add to favourites Button"}
+        description={"Minimalistic Add to favourites Button"}
       >
         <Heart_Checkbox />
       </ComponentTemplate>
@@ -37,7 +37,7 @@ export default function CheckBoxes() {
         <TextCheckbox />
       </ComponentTemplate>
 
-      <ComponentTemplate title={"Toggle"} text={"Glows when active"}>
+      <ComponentTemplate title={"Toggle"} description={"Glows when active"}>
         <ToggleBtn />
       </ComponentTemplate>
     </>

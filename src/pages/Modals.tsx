@@ -71,7 +71,7 @@ function closeModal() {
         <Message_modal />
       </ComponentTemplate> */}
       <ComponentTemplate
-        text={'Minimalistic Confirm o negate modal with two buttons'}
+        description={'Minimalistic Confirm o negate modal with two buttons'}
         title={'Confirmation'}
       >
         <Confirmation_modal />
