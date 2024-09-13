@@ -9,7 +9,7 @@ export default function NavLinks() {
       <LinkButton to={'/inputs'}>Inputs</LinkButton>
       <LinkButton to={'/modals'}>Modals</LinkButton>
       <LinkButton to={'/animations'}>Animations</LinkButton>
-      {/*<LinkButton to={"/forms"}>Forms</LinkButton> */}
+      <LinkButton to={"/forms"}>Forms</LinkButton> 
     </>
   )
 }

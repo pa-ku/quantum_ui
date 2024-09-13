@@ -9,12 +9,14 @@ import Animations from './pages/Animations'
 import CheckBoxes from './pages/CheckBoxes'
 import Modals from './pages/Modals'
 import React from 'react'
+import Testing from './pages/Testing'
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/testing" element={<Testing />} />
           <Route path="/" element={<Layout home />}>
             <Route path="/" index element={<Home />} />
           </Route>
