@@ -70,9 +70,8 @@ export default function LoginForm() {
           <p className="text-xl">Email</p>
           <input
             type="email"
-            className="rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+            className="rounded-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
             placeholder="ejemplo@gmail.com"
-          
             required
           />
         </label>
@@ -82,7 +81,7 @@ export default function LoginForm() {
           <div className="flex w-full flex-row">
             <input
               type="password"
-              className="w-full rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+              className="w-full rounded-l-lg bg-gray-800 p-3 outline-none placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
               placeholder="quantum"
               required
               minLength={8}
@@ -90,11 +89,11 @@ export default function LoginForm() {
             <span className="relative flex items-center justify-center object-contain">
               <input
                 type="checkbox"
-                className="peer h-full w-10 cursor-pointer appearance-none rounded-r-lg bg-gray-700"
+                className="peer h-full w-10 cursor-pointer appearance-none rounded-r-lg bg-gray-700 outline-none focus:placeholder:text-secundary"
               />
 
               <svg
-                className="pointer-events-none absolute hidden stroke-white p-1 peer-checked:block peer-hover:stroke-primary"
+                className="pointer-events-none absolute hidden stroke-white p-1 peer-checked:block peer-hover:stroke-secundary"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 fill="none"
@@ -106,7 +105,7 @@ export default function LoginForm() {
                 <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
               </svg>
               <svg
-                className="pointer-events-none absolute stroke-white p-1 peer-checked:hidden peer-hover:stroke-primary"
+                className="pointer-events-none absolute stroke-white p-1 peer-checked:hidden peer-hover:stroke-secundary"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 fill="none"
@@ -125,7 +124,7 @@ export default function LoginForm() {
         </label>
         <button
           type="submit"
-          className="w-full rounded-lg bg-gradient-to-bl from-primary to-secundary py-3 text-lg text-white"
+          className="w-full rounded-lg bg-primary py-3 text-lg text-white"
         >
           Enviar
         </button>

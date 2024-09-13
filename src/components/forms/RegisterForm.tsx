@@ -70,7 +70,7 @@ export default function RegisterForm() {
           <p className="text-xl">Username</p>
           <input
             type="email"
-            className="rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+            className="rounded-lg bg-gray-800 p-3 outline-none placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
             placeholder="quantumui"
             required
             minLength={3}
@@ -80,7 +80,7 @@ export default function RegisterForm() {
           <p className="text-xl">Email</p>
           <input
             type="email"
-            className="rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+            className="rounded-lg bg-gray-800 p-3 outline-none placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
             placeholder="ejemplo@gmail.com"
             required
           />
@@ -90,18 +90,17 @@ export default function RegisterForm() {
           <p className="text-xl">Password</p>
           <input
             type="password"
-            className="rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+            className="rounded-lg bg-gray-800 p-3 outline-none placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
             placeholder="quantum"
             required
             minLength={8}
-            
           />
         </label>
         <label className="flex flex-col">
           <p className="text-xl">Confirm Password</p>
           <input
             type="password"
-            className="rounded-lg bg-gray-800 p-3 placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400"
+            className="rounded-lg bg-gray-800 p-3 outline-none placeholder-shown:border-gray-400 valid:border-l-8 valid:border-emerald-400 focus:placeholder:text-secundary"
             placeholder="quantum"
             required
             minLength={8}
@@ -109,7 +108,7 @@ export default function RegisterForm() {
         </label>
         <button
           type="submit"
-          className="w-full rounded-lg bg-gradient-to-bl from-primary to-secundary py-3 text-lg text-white"
+          className="w-full rounded-lg bg-primary py-3 text-lg text-white"
         >
           Register
         </button>
