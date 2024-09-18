@@ -38,7 +38,9 @@ export default function CodeBlock({ code, language }: CodeTypes) {
             >
               {copy}
             </button>
-          <p className='text-slate-500 absolute p-2 top-0 right-0'>{language ? 'Css' : 'Html'}</p>
+            <p className="absolute right-0 top-0 p-2 text-slate-500">
+              {language ? 'Css' : 'Html'}
+            </p>
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line })}>
                 {line.map((token, key) => (
