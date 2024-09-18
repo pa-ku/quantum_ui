@@ -7,7 +7,7 @@ export default function LoginForm() {
     <form className="flex w-80 flex-col gap-3">
       <input
         type="email"
-        className="w-full rounded-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary-500"
+        className="w-full rounded-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary"
         placeholder="username"
         required
       />
@@ -15,7 +15,7 @@ export default function LoginForm() {
       <div className="flex w-full flex-row">
         <input
           type="password"
-          className="w-full rounded-l-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary-500"
+          className="w-full rounded-l-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary"
           placeholder="password"
           required
           minLength={8}
@@ -23,11 +23,11 @@ export default function LoginForm() {
         <span className="relative flex items-center justify-center object-contain">
           <input
             type="checkbox"
-            className="peer h-full w-10 cursor-pointer appearance-none rounded-r-lg bg-gray-700 outline-none focus:placeholder:text-primary-500"
+            className="peer h-full w-10 cursor-pointer appearance-none rounded-r-lg bg-gray-700 outline-none focus:placeholder:text-primary"
           />
 
           <svg
-            className="pointer-events-none absolute hidden stroke-white p-1 peer-checked:block peer-hover:stroke-primary-500"
+            className="pointer-events-none absolute hidden stroke-white p-1 peer-checked:block peer-hover:stroke-primary"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             fill="none"
@@ -39,7 +39,7 @@ export default function LoginForm() {
             <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
           </svg>
           <svg
-            className="pointer-events-none absolute stroke-white p-1 peer-checked:hidden peer-hover:stroke-primary-500"
+            className="pointer-events-none absolute stroke-white p-1 peer-checked:hidden peer-hover:stroke-primary"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             fill="none"
@@ -58,7 +58,7 @@ export default function LoginForm() {
 
       <button
         type="submit"
-        className="w-full rounded-lg bg-primary-500 py-3 text-lg text-white"
+        className="w-full rounded-lg bg-primary py-3 text-lg text-white"
       >
         Enviar
       </button>

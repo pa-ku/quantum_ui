@@ -1,11 +1,15 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
 import ComponentTemplate from '../ComponentTemplate'
+import jsxToString from 'react-element-to-jsx-string'
+
 export default function Slick_button() {
-  const codeBlock = `<button className="slick-button rounded-md px-5 py-3 text-xl
-    text-white duration-300">
-     Fancy
-</button>`
+  const componentToJsx = (
+    <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
+      Subscribe
+    </button>
+  )
+  const componentCode = jsxToString(componentToJsx)
 
   const codeCss = `@property --color-1 {
   syntax: "<color>";
@@ -42,10 +46,8 @@ export default function Slick_button() {
           'This button needs the @property from css to animate the colors of the background image. Changing the transition time creates different animations '
         }
       >
-        <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
-          Subscribe
-        </button>
-        <CodeBlock code={codeBlock} />
+        {componentToJsx}
+        <CodeBlock code={componentCode} />
         <CodeBlock code={codeCss} language={'css'} />
       </ComponentTemplate>
     </>

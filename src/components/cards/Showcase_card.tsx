@@ -1,6 +1,5 @@
 import React from 'react'
 import CodeBlock from '../CodeBlock'
-import barilocheWebp from '../../assets/images/bariloche.webp'
 import jsxToString from 'react-element-to-jsx-string'
 
 export default function Showcase_card() {
@@ -8,7 +7,9 @@ export default function Showcase_card() {
     <figure className="bg-shadow-md h-max w-full rounded-xl bg-gray-950 sm:w-72">
       <img
         className="h-60 w-full rounded-t-xl object-cover"
-        src={barilocheWebp}
+        src={
+          'https://resizer.glanacion.com/resizer/v2/turistas-en-7BUWWIQXNVEFRA7WMPSCFXBRUI.JPG?auth=1391195722ac7fdd4a815eda7654172ef5acb4721601e27aa060345dd908bd22&width=780&height=520&quality=70&smart=true'
+        }
         alt=""
       />
       <figcaption className="p-4">
@@ -16,7 +17,7 @@ export default function Showcase_card() {
           Bariloche
         </h2>
         <p className="text-white">
-          Una vista maravillosa desde el cerro campanario
+        Bariloche es conocida por sus paisajes montañosos, lagos cristalinos, nieve en invierno, y arquitectura de estilo alpino.
         </p>
       </figcaption>
     </figure>
