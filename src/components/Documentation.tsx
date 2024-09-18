@@ -3,35 +3,37 @@ import React from 'react'
 
 export default function Documentation() {
   const TAILWIND_COLORS = `theme: {
-        extend: {
-      colors: {
+        colors: {
             primary: {
-              DEFAULT: 'var(--primary)',
+            DEFAULT: "var(--primary)",
+            100: 'var(--primary-100)',
+            200: 'var(--primary-200)',
+            300: 'var(--primary-300)',
+            400: 'var(--primary-400)',
+            500: 'var(--primary-500)',
+            600: 'var(--primary-600)',
+            700: 'var(--primary-700)',
+            800: 'var(--primary-800)',
+            900: 'var(--primary-900)',
+            1000: 'var(--primary-1000)',
             },
-            secundary: {
-              DEFAULT: 'var(--secundary)',
-            },},},}`
+}`
 
   const CSS_COLORS = `:root{
-      --primary: #20ac84;
-      --secundary: #cd61ff;
-    }`
+  --primary: #42a4ff;
+  --primary-100: #d1e9ff;
+  --primary-200: #add8ff;
+  --primary-300: #8ac6ff;
+  --primary-400: #66b5ff;
+  --primary-500: #42a4ff;
+  --primary-600: #1f93ff;
+  --primary-700: #0081fa;
+  --primary-800: #006fd6;
+  --primary-900: #005cb3;
+  --primary-1000: #004a8f;
+  }`
 
-  const TAILWIND_COLORS_TWO = ` colors: {
-            primary: {
-              DEFAULT: "var(--primary)",
-              100: "var(--primary-100)",
-              200: "var(--primary-200)",
-              300: "var(--primary-300)",
-            },
-       }`
 
-  const CSS_COLORS_TWO = `:root{
-      --primary: #20ac84;
-      --primary-100: #20ac84;
-      --primary-200: #20ac84;
-      --primary-300: #20ac84;
-    }`
   return (
     <>
       <div>
@@ -48,10 +50,8 @@ export default function Documentation() {
             >
               Tailwind
             </a>
-            installed. A
-            <span className="mx-1 text-secundary-300"> framework</span>
-            is not required <br /> but you'll need to change
-            <code>className</code> to <code>class</code> for CSS properties.
+            installed. A framework is not required <br /> but you'll need to
+            change className to class for CSS properties.
           </p>
         </div>
 
@@ -79,14 +79,7 @@ export default function Documentation() {
           <CodeBlock language="css" code={CSS_COLORS} />
         </div>
 
-        <div>
-          <p>
-            It's possible to add gradients or intermediate values for these
-            colors.
-          </p>
-          <CodeBlock code={TAILWIND_COLORS_TWO} />
-          <CodeBlock language="css" code={CSS_COLORS_TWO} />
-        </div>
+       
         <Accesibility />
       </div>
     </>
