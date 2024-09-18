@@ -32,15 +32,16 @@ export default function CodeBlock({ code, language }: CodeTypes) {
           <pre
             className={`${language ? 'bg-[var(--code-blue-500)]' : 'bg-[var(--code-violet-500)]'} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
-            <button
-              className={`absolute left-3 top-1 opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100`}
-              onClick={handleCopy}
-            >
-              {copy}
-            </button>
-            <p className="absolute right-0 top-0 p-2 text-slate-500">
-              {language ? 'Css' : 'Html'}
-            </p>
+            <div className="absolute left-0 top-0 flex items-center justify-center">
+              <p className="p-2 text-slate-500">{language ? 'Css' : 'Html'}</p>
+              <button
+                className={`flex opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100`}
+                onClick={handleCopy}
+              >
+                {copy}
+              </button>
+            </div>
+
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line })}>
                 {line.map((token, key) => (
