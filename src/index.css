@@ -396,3 +396,33 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 1;
   }
 }
+
+.animate-codein {
+  animation: animate-codein 300ms forwards;
+}
+.animate-codeout {
+  animation: animate-codeout 300ms forwards;
+}
+
+@keyframes animate-codein {
+  from {
+    opacity: 0;
+    translate: 0px -20px;
+  }
+  to {
+    translate: 0px;
+    opacity: 1;
+
+  }
+}
+
+@keyframes animate-codeout {
+  from {
+    translate: 0px;
+    opacity: 1;
+  }
+  to {
+    translate: 0px -20px;
+    opacity: 0;
+  }
+}

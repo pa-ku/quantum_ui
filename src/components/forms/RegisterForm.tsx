@@ -1,10 +1,11 @@
 import React from 'react'
 import CodeBlock from '../CodeBlock'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 export default function RegisterForm() {
   const componentToJsx = (
     <form className="flex w-80 flex-col gap-3">
-      <div className="flex gap-x-3 items-center justify-center">
+      <div className="flex items-center justify-center gap-x-3">
         <input
           type="text"
           className="w-full rounded-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary"
@@ -22,47 +23,23 @@ export default function RegisterForm() {
         placeholder="email"
       />
 
-      <div className="flex w-full flex-row">
+      <div className="relative flex w-full flex-row">
         <input
           type="password"
           className="w-full rounded-l-lg bg-gray-800 p-3 outline-0 placeholder-shown:border-gray-400 focus:placeholder:text-primary"
           placeholder="password"
+          required
           minLength={8}
         />
-        <span className="relative flex items-center justify-center object-contain">
+        <label className="absolute right-0 flex h-full cursor-pointer items-center justify-center rounded-r-md">
           <input
             type="checkbox"
-            className="peer h-full w-10 cursor-pointer appearance-none rounded-r-lg bg-gray-700 outline-none focus:placeholder:text-primary"
+            className="peer h-full w-full cursor-pointer appearance-none rounded-r-lg outline-none focus:placeholder:text-primary"
           />
-
-          <svg
-            className="pointer-events-none absolute hidden stroke-white p-1 peer-checked:block peer-hover:stroke-primary"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-          </svg>
-          <svg
-            className="pointer-events-none absolute stroke-white p-1 peer-checked:hidden peer-hover:stroke-primary"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
-            <path d="M3 15l2.5 -3.8" />
-            <path d="M21 14.976l-2.492 -3.776" />
-            <path d="M9 17l.5 -4" />
-            <path d="M15 17l-.5 -4" />
-          </svg>
-        </span>
+          <span className="mr-2 rounded-full px-1 text-xl text-gray-400 hover:bg-slate-700 peer-checked:text-primary">
+            ＊
+          </span>
+        </label>
       </div>
 
       <button
@@ -79,7 +56,9 @@ export default function RegisterForm() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode}></CodeBlock>
+      <CodeWrapper>
+        <CodeBlock code={componentCode}></CodeBlock>
+      </CodeWrapper>
     </>
   )
 }

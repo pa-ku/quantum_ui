@@ -2,7 +2,7 @@ import CodeBlock from '../CodeBlock'
 import React from 'react'
 import ComponentTemplate from '../ComponentTemplate'
 import jsxToString from 'react-element-to-jsx-string'
-
+import CodeWrapper from '../CodeWrapper'
 export default function Slick_button() {
   const componentToJsx = (
     <button className="slick-button group relative rounded-md px-5 py-3 text-xl text-white duration-300">
@@ -47,8 +47,10 @@ export default function Slick_button() {
         }
       >
         {componentToJsx}
-        <CodeBlock code={componentCode} />
-        <CodeBlock code={codeCss} language={'css'} />
+        <CodeWrapper>
+          <CodeBlock code={componentCode} />
+          <CodeBlock code={codeCss} language={'css'} />
+        </CodeWrapper>
       </ComponentTemplate>
     </>
   )

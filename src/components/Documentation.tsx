@@ -33,7 +33,6 @@ export default function Documentation() {
   --primary-1000: #004a8f;
   }`
 
-
   return (
     <>
       <div>
@@ -76,13 +75,56 @@ export default function Documentation() {
             In the global CSS file, create variables for the Primary and
             Secondary colors.
           </p>
-          <CodeBlock language="css" code={CSS_COLORS} />
+          <CodeBlock language={'css'} code={CSS_COLORS} />
         </div>
-
-       
-        <Accesibility />
+        <Consistency />
       </div>
     </>
+  )
+}
+
+function Consistency() {
+  return (
+    <div className="pt-10">
+      <h3 className="text-2xl font-bold text-secundary-300">
+        Keep it consistent
+      </h3>
+      <p className="pb-4">
+        Using the Prettier plugin with Tailwind ensures clear and maintainable
+        code.
+      </p>
+      <div className="space-y-10">
+        <div className="space-y-2">
+          <p>
+            <span className="mr-1 rounded-md bg-slate-800 px-2 py-0.5 text-primary-100">
+              Install
+            </span>
+            the prettier extension and the plugin for tailwind
+          </p>
+          <CodeBlock
+            code="npm install -D prettier prettier-plugin-tailwindcss"
+            language={'bash'}
+          />
+        </div>
+        <div className="space-y-2">
+          <p>
+            Create and add to your project a file named
+            <span className="mx-1 rounded-xl bg-slate-800 px-2 py-0.5 text-primary-100">
+              prettier.
+            </span>
+            and paste this code inside.
+          </p>
+          <CodeBlock
+            code={`{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "semi": false, // dont add semicolons
+  "singleQuote": true // dont add single quote
+}`}
+            language={'js'}
+          />
+        </div>
+      </div>
+    </div>
   )
 }
 

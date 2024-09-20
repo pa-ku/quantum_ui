@@ -1,6 +1,7 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Accent_card() {
   const componentToJsx = (
@@ -18,20 +19,22 @@ export default function Accent_card() {
   const componentCode = jsxToString(componentToJsx)
 
   const codeCss = `.animate-rotate{
-  animation: rotate 3s linear infinite;
-}
+    animation: rotate 3s linear infinite;
+    }
 
 @keyframes rotate {
   to{
     rotate: 360deg;
   }
-}`
+  }`
 
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
-      <CodeBlock code={codeCss} language={'css'} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+        <CodeBlock code={codeCss} language={'css'} />
+      </CodeWrapper>
     </>
   )
 }

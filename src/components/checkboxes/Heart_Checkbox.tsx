@@ -1,7 +1,7 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
 import jsxToString from 'react-element-to-jsx-string'
-
+import CodeWrapper from '../CodeWrapper'
 export default function Heart_Checkbox() {
   const componentToJsx = (
     <label
@@ -29,7 +29,9 @@ export default function Heart_Checkbox() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+      </CodeWrapper>
     </>
   )
 }

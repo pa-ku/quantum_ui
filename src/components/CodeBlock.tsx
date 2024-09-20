@@ -6,6 +6,7 @@ type CodeTypes = {
   code: string
   language?: string
 }
+
 export default function CodeBlock({ code, language }: CodeTypes) {
   const [copy, setCopy] = useState('Copy')
   const [isDisabled, setIsDisabled] = useState(false)
@@ -26,14 +27,21 @@ export default function CodeBlock({ code, language }: CodeTypes) {
       <Highlight
         theme={language ? themes.synthwave84 : themes.duotoneDark}
         code={code}
-        language={language ? language : 'tsx'}
+        language={language === undefined ? 'tsx' : language}
       >
         {({ tokens, getLineProps, getTokenProps }) => (
           <pre
-            className={`${language ? 'bg-[var(--code-blue-500)]' : 'bg-[var(--code-violet-500)]'} group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
+            className={` ${
+              (language == 'css' && 'bg-[var(--code-blue-500)]') ||
+              (language == undefined && 'bg-[var(--code-violet-500)]') ||
+              (language == 'bash' && 'bg-gray-800') ||
+              (language == 'js' && 'bg-gray-800')
+            } group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
             <div className="absolute left-0 top-0 flex items-center justify-center">
-              <p className="p-2 text-slate-500">{language ? 'Css' : 'Html'}</p>
+              <p className="p-2 text-slate-500">
+                {language === undefined ? 'html' : language}
+              </p>
               <button
                 className={`flex opacity-0 duration-200 hover:text-primary-200 group-hover:opacity-100`}
                 onClick={handleCopy}
