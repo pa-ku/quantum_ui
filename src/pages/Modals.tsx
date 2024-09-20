@@ -50,7 +50,7 @@ function closeModal() {
                 function in a button to manage the showModal state
               </p>
 
-              <CodeBlock code={codeBlock} />
+              <CodeBlock language="jsx" code={codeBlock} />
               <button
                 onClick={closeModal}
                 className="mt-5 w-full rounded-xl bg-secundary-800 p-2 hover:brightness-110"

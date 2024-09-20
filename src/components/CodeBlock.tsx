@@ -35,7 +35,8 @@ export default function CodeBlock({ code, language }: CodeTypes) {
               (language == 'css' && 'bg-[var(--code-blue-500)]') ||
               (language == undefined && 'bg-[var(--code-violet-500)]') ||
               (language == 'bash' && 'bg-gray-800') ||
-              (language == 'js' && 'bg-gray-800')
+              (language == 'js' && 'bg-gray-800') ||
+              (language == 'jsx' && 'bg-[var(--code-blue-500)]')
             } group relative w-full overflow-auto rounded-lg px-5 py-8 text-xs md:text-base`}
           >
             <div className="absolute left-0 top-0 flex items-center justify-center">
