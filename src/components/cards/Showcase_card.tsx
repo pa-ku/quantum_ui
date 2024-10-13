@@ -1,6 +1,7 @@
 import React from 'react'
 import CodeBlock from '../CodeBlock'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Showcase_card() {
   const componentToJsx = (
@@ -17,7 +18,8 @@ export default function Showcase_card() {
           Bariloche
         </h2>
         <p className="text-white">
-        Bariloche es conocida por sus paisajes montañosos, lagos cristalinos, nieve en invierno, y arquitectura de estilo alpino.
+          Bariloche es conocida por sus paisajes montañosos, lagos cristalinos,
+          nieve en invierno, y arquitectura de estilo alpino.
         </p>
       </figcaption>
     </figure>
@@ -27,7 +29,9 @@ export default function Showcase_card() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+      </CodeWrapper>
     </>
   )
 }

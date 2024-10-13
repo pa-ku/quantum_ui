@@ -2,6 +2,7 @@ import React from 'react'
 import CodeBlock from '../CodeBlock'
 import ComponentTemplate from '../ComponentTemplate'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Neon() {
   const componentToJsx = (
@@ -22,7 +23,9 @@ export default function Neon() {
     <>
       <ComponentTemplate title={title} description={description}>
         {componentToJsx}
-        <CodeBlock code={componentCode} />
+        <CodeWrapper>
+          <CodeBlock code={componentCode} />
+        </CodeWrapper>
       </ComponentTemplate>
     </>
   )
