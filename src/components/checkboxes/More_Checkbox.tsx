@@ -1,6 +1,7 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function More_Checkbox() {
   const componentToJsx = (
@@ -25,7 +26,9 @@ export default function More_Checkbox() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+      </CodeWrapper>
     </>
   )
 }

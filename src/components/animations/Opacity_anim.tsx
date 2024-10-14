@@ -1,5 +1,6 @@
-import CodeBlock from "../CodeBlock";
-import React from "react";
+import CodeBlock from '../CodeBlock'
+import React from 'react'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Opacity_anim() {
   const codeBlock = `.animate-opacity{
@@ -11,12 +12,14 @@ export default function Opacity_anim() {
     }
     to{
         opacity:1
-}}`;
+}}`
 
   return (
     <>
       <div className="opacity h-20 w-20 rounded-xl bg-primary"></div>
-      <CodeBlock code={codeBlock} language={"css"} />
+      <CodeWrapper>
+        <CodeBlock code={codeBlock} language={'css'} />
+      </CodeWrapper>
     </>
-  );
+  )
 }

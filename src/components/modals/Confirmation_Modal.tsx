@@ -2,6 +2,7 @@ import React from 'react'
 import useModal from '../../hooks/useModal'
 import CodeBlock from '../CodeBlock'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Confirmation_modal() {
   const [refModal, openModal, closeModal] = useModal()
@@ -55,7 +56,9 @@ export default function Confirmation_modal() {
           </button>
         </div>
       </dialog>
-      <CodeBlock language="jsx" code={codeBlock} />
+      <CodeWrapper>
+        <CodeBlock language="jsx" code={codeBlock} />
+      </CodeWrapper>
     </>
   )
 }

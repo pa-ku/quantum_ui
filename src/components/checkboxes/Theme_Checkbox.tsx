@@ -1,6 +1,7 @@
 import React from 'react'
 import CodeBlock from '../CodeBlock'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function ThemeCheckbox() {
   const componentToJsx = (
@@ -26,7 +27,9 @@ export default function ThemeCheckbox() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+      </CodeWrapper>
     </>
   )
 }

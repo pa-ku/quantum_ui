@@ -1,6 +1,7 @@
 import CodeBlock from '../CodeBlock'
 import React from 'react'
 import jsxToString from 'react-element-to-jsx-string'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Modern_input() {
   const componentToJsx = (
@@ -21,7 +22,9 @@ export default function Modern_input() {
   return (
     <>
       {componentToJsx}
-      <CodeBlock code={componentCode} />
+      <CodeWrapper>
+        <CodeBlock code={componentCode} />
+      </CodeWrapper>
     </>
   )
 }

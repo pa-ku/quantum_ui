@@ -1,5 +1,6 @@
-import CodeBlock from "../CodeBlock";
-import React from "react";
+import CodeBlock from '../CodeBlock'
+import React from 'react'
+import CodeWrapper from '../CodeWrapper'
 
 export default function Chroma_anim() {
   const codeBlock = `.animate-chroma{
@@ -13,12 +14,14 @@ export default function Chroma_anim() {
     to {
       background-position: 1200%;
     }
-}`;
+}`
 
   return (
     <>
       <div className="animate-chroma h-20 w-20 rounded-xl bg-primary-300"></div>
-      <CodeBlock code={codeBlock} language={"css"} />
+      <CodeWrapper>
+        <CodeBlock code={codeBlock} language={'css'} />
+      </CodeWrapper>
     </>
-  );
+  )
 }
