@@ -101,7 +101,7 @@ export default function BentoBox() {
 
         <div className="box col-span-3">
           <div className="content h-20 p-10 text-center text-2xl md:text-3xl">
-            Css without Js
+            100% Vanilla Css
           </div>
         </div>
 

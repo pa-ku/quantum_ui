@@ -30,13 +30,13 @@
 
 @font-face {
   font-family: 'Monserrat';
-  src: url('../src/assets/fonts/Montserrat-Regular.ttf');
+  src: url('../src/assets/fonts/Montserrat-Regular.woff2');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Monserrat';
-  src: url('../src/assets/fonts/Montserrat-Bold.ttf');
+  src: url('../src/assets/fonts/Montserrat-Bold.woff2');
   font-weight: 800;
 }
 
@@ -412,7 +412,6 @@ body::-webkit-scrollbar-thumb:hover {
   to {
     translate: 0px;
     opacity: 1;
-
   }
 }
 

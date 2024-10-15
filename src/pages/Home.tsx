@@ -20,7 +20,7 @@ export default function Home() {
 function Banner() {
   return (
     <>
-      <div className="flex h-40 w-full flex-col items-center justify-center">
+      <div className="flex h-28 w-full flex-col items-center justify-center">
         <h1 className="flex h-full w-full items-center justify-center bg-gradient-to-t from-gray-300 to-white bg-clip-text text-center text-6xl font-semibold tracking-tight text-transparent md:text-7xl">
           Design made real
         </h1>
