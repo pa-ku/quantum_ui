@@ -383,12 +383,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .animate-scale {
-  animation: scale 1500ms forwards;
+  animation: scale 1000ms forwards;
 }
 
 @keyframes scale {
   from {
-    translate: -25px -25px;
+    translate: -10px -10px;
     opacity: 0;
   }
   to {
