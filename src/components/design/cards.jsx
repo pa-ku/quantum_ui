@@ -20,13 +20,13 @@ export const CARD_ACCENT_CSS = `.animate-rotate{
   }`
 
 export const CARD_PRODUCT = (
-  <figure className="relative w-56 shadow-md shadow-gray-900">
-    <div className="rounded-t-xl border-b-2 bg-white">
+  <figure className="relative w-60 shadow-md shadow-gray-900">
+    <div className="rounded-t-lg border-b-2 bg-white">
       <span
         aria-label="Descuento"
-        className="absolute right-0 rounded-bl-xl rounded-tr-xl bg-primary px-3 text-xl font-bold"
+        className="absolute right-0 rounded-bl-lg rounded-tr-lg bg-primary px-3 text-xl "
       >
-        33%
+        -33%
       </span>
       <img
         className="m-auto flex h-56 w-max rounded-t-xl object-contain p-3"
@@ -34,13 +34,14 @@ export const CARD_PRODUCT = (
         alt="Product image"
       />
     </div>
-    <figcaption className="rounded-b-xl bg-white p-2 text-slate-700">
+    <figcaption className="rounded-b-lg bg-white py-2 px-3 text-slate-900">
       <div className="flex items-center gap-1">
         <p className="text-2xl font-bold">$1.000</p>
-        <p className="text-gray-500 line-through">$150</p>
+        <p className="text-gray-500 line-through">$1500</p>
       </div>
-      <h2 className="text-lg font-bold">Segway Ninebot Gt2</h2>
-      <p className="">Lo mejor de su clase con una autonomia de 100km</p>
+      <p className="text-xs font-bold text-green-600">Envio Gratis</p>
+      <h2 className="text-lg font-semibold">Segway Ninebot Gt2</h2>
+      <p className="text-xs">Lo mejor de su clase con una autonomia de 100km</p>
     </figcaption>
   </figure>
 )
