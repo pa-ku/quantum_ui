@@ -232,7 +232,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .title {
-  @apply w-full bg-gradient-to-t from-gray-300 to-white bg-clip-text text-start text-4xl font-bold text-transparent;
+  @apply bg-gradient-to-t from-gray-300 to-white bg-clip-text text-start text-4xl font-bold text-transparent;
 }
 
 @keyframes rotate {

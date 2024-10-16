@@ -1,16 +1,33 @@
-import ComponentTemplate from '../components/ComponentTemplate'
-import ComponentTitle from '../components/ComponentTitle'
-import BorderGlow from '../components/buttons/BorderGlow_button'
-import Neon from '../components/buttons/Neon.button'
-import Slick_button from '../components/buttons/Slick_button'
 import React from 'react'
+import ComponentLayout from '../components/ComponentLayout'
+import ComponentTitle from '../components/ComponentTitle'
+import {
+  BUTTON_GLOW,
+  BUTTON_NEON,
+  BUTTON_SLICK,
+  BUTTON_SLICK_CSS,
+} from '../components/design/buttons'
+
 export default function Buttons() {
   return (
     <>
       <ComponentTitle>Buttons</ComponentTitle>
-      <Neon />
-      <Slick_button />
-      <BorderGlow />
+      <ComponentLayout
+        component={BUTTON_NEON}
+        title="Neon"
+        description=""
+      ></ComponentLayout>
+      <ComponentLayout
+        component={BUTTON_SLICK}
+        title="Slick"
+        description="This button needs the @property from css to animate the colors of the background image. Changing the transition time creates different animations"
+        css={BUTTON_SLICK_CSS}
+      ></ComponentLayout>
+      <ComponentLayout
+        component={BUTTON_GLOW}
+        title="Glow"
+        description=""
+      ></ComponentLayout>
     </>
   )
 }

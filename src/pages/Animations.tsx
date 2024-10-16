@@ -1,28 +1,42 @@
 import React from 'react'
-import Chroma_anim from '../components/animations/Chroma_anim'
-import Opacity_anim from '../components/animations/Opacity_anim'
-import ComponentTemplate from '../components/ComponentTemplate'
-import Glow_anim from '../components/animations/Glow_anim'
 import ComponentTitle from '../components/ComponentTitle'
+import ComponentLayout from '../components/ComponentLayout'
+import {
+  ANIMATE_CHROMA_CSS,
+  ANIMATE_GLOW_CSS,
+  ANIMATE_OPACITY_CSS,
+} from '../components/design/animations'
 
 export default function Animations() {
   return (
     <>
       <ComponentTitle>Animations</ComponentTitle>
-      <ComponentTemplate title={'Chroma'}>
-        <Chroma_anim />
-      </ComponentTemplate>
+      <ComponentLayout
+        component={
+          <div className="animate-chroma h-20 w-20 rounded-xl bg-primary-300"></div>
+        }
+        css={ANIMATE_CHROMA_CSS}
+        title="Chroma"
+        description=""
+      ></ComponentLayout>
 
-      <ComponentTemplate
+      <ComponentLayout
+        component={
+          <div className="opacity h-20 w-20 rounded-xl bg-primary"></div>
+        }
+        css={ANIMATE_OPACITY_CSS}
         description={'Minimal animation to show an element'}
         title={'Opacity'}
-      >
-        <Opacity_anim />
-      </ComponentTemplate>
+      ></ComponentLayout>
 
-      <ComponentTemplate title={'Glow'}>
-        <Glow_anim />
-      </ComponentTemplate>
+      <ComponentLayout
+        component={
+          <div className="animate-chroma h-20 w-20 rounded-xl bg-primary-300"></div>
+        }
+        css={ANIMATE_GLOW_CSS}
+        title="Glow"
+        description=""
+      ></ComponentLayout>
     </>
   )
 }

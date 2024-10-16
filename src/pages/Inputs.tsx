@@ -1,34 +1,32 @@
-import MinimalInput from '../components/inputs/Minimal_Input'
-import InputSearch from '../components/inputs/Search_input'
-import ComponentTemplate from '../components/ComponentTemplate'
 import ComponentTitle from '../components/ComponentTitle'
-import Modern_input from '../components/inputs/Modern_input'
 import React from 'react'
+import {
+  INPUT_MINIMAL,
+  INPUT_MODERN,
+  INPUT_SEARCH,
+} from '../components/design/inputs'
+import ComponentLayout from '../components/ComponentLayout'
 export default function Inputs() {
   return (
     <>
       <ComponentTitle>Inputs</ComponentTitle>
+      <ComponentLayout
+        component={INPUT_MODERN}
+        title="Modern"
+        description="Placeholder moves to display de name of the input"
+      ></ComponentLayout>
 
-      <ComponentTemplate
-        title={'Modern'}
-        description={'Placeholder moves to display de name of the input'}
-      >
-        <Modern_input />
-      </ComponentTemplate>
-      <ComponentTemplate
-        title={'Search Bar'}
-        description={
-          'Uses Javascript to detect when the imput has content to show Search icon or Close Icon'
-        }
-      >
-        <InputSearch />
-      </ComponentTemplate>
-      <ComponentTemplate
+      <ComponentLayout
+        component={INPUT_SEARCH}
+        title="Search Bar"
+        description="Uses Javascript to detect when the imput has content to show Search icon or Close Icon"
+      ></ComponentLayout>
+
+      <ComponentLayout
+        component={INPUT_MINIMAL}
         description={'Less is more with his imput, does the job'}
-        title={'Minimal'}
-      >
-        <MinimalInput />
-      </ComponentTemplate>
+        title="Minimal"
+      ></ComponentLayout>
     </>
   )
 }
