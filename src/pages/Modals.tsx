@@ -6,6 +6,7 @@ import Confirmation_modal from '../components/modals/Confirmation_Modal'
 import Contact_modal from '../components/modals/Contact_Modal'
 import Message_modal from '../components/modals/Message_Modal'
 import React from 'react'
+import { MODAL_CONFIRM } from '../components/design/modals'
 
 export default function Modals() {
   const [refModal, openModal, closeModal] = useModal()
@@ -64,15 +65,10 @@ function closeModal() {
         Modals
       </ComponentTitle>
 
-      {/*  <ComponentTemplate title={"Contant Modal"}>
-        <Contact_modal />
-      </ComponentTemplate>
-      <ComponentTemplate title={"Message Modal"}>
-        <Message_modal />
-      </ComponentTemplate> */}
       <ComponentTemplate
         description={'Minimalistic Confirm o negate modal with two buttons'}
-        title={'Confirmation'}
+        title={'Confirm'}
+        code={MODAL_CONFIRM}
       >
         <Confirmation_modal />
       </ComponentTemplate>

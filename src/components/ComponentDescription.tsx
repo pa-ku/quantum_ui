@@ -9,5 +9,5 @@ export default function ComponentDescription({ children }) {
         </div>
       </div>
     </>
-  );
+  )
 }
