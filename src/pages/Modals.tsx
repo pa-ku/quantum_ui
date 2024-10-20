@@ -3,8 +3,6 @@ import ComponentTemplate from '../components/ComponentTemplate'
 import ComponentTitle from '../components/ComponentTitle'
 import useModal from '../hooks/useModal'
 import Confirmation_modal from '../components/modals/Confirmation_Modal'
-import Contact_modal from '../components/modals/Contact_Modal'
-import Message_modal from '../components/modals/Message_Modal'
 import React from 'react'
 import { MODAL_CONFIRM } from '../components/design/modals'
 

@@ -2,6 +2,7 @@ import React from 'react'
 import ComponentLayout from '../components/ComponentLayout'
 import ComponentTitle from '../components/ComponentTitle'
 import {
+  BUTTON_ACTION,
   BUTTON_GLOW,
   BUTTON_NEON,
   BUTTON_SLICK,
@@ -26,6 +27,11 @@ export default function Buttons() {
       <ComponentLayout
         component={BUTTON_GLOW}
         title="Glow"
+        description=""
+      ></ComponentLayout>
+      <ComponentLayout
+        component={BUTTON_ACTION}
+        title="Action"
         description=""
       ></ComponentLayout>
     </>
