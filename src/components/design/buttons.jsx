@@ -52,9 +52,7 @@ export const BUTTON_GLOW = (
 )
 
 export const BUTTON_ACTION = (
-  <div className="space-x-5">
-    <button className="shadow-opa rounded-md bg-slate-600 px-8 py-3 text-xl text-primary shadow-bottom shadow-slate-700 duration-100 active:translate-y-1 active:shadow-none">
-      Press
-    </button>
-  </div>
+  <button className="rounded-md bg-slate-600 px-8 py-3 text-xl text-primary shadow-bottom shadow-slate-700 duration-100 active:translate-y-1 active:shadow-none">
+    Press
+  </button>
 )
