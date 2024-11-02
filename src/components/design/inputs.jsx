@@ -42,7 +42,7 @@ export const INPUT_SEARCH = (
 
 export const INPUT_FILE = (
   <>
-    <label className="just-center relative flex cursor-cell items-center gap-2 bg-gray-800 px-8 py-4 font-bold text-emerald-500 hover:bg-gray-700">
+    <label className="overflow-hidden just-center relative flex cursor-cell items-center gap-2 bg-gray-800 px-8 py-4 font-bold text-emerald-500 hover:bg-gray-700">
       <svg
         viewBox="0 0 24 24"
         fill="none"

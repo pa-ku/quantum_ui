@@ -3,35 +3,19 @@ import React from 'react'
 
 export default function Documentation() {
   const TAILWIND_COLORS = `theme: {
-        colors: {
+      colors: {
             primary: {
-            DEFAULT: "var(--primary)",
-            100: 'var(--primary-100)',
-            200: 'var(--primary-200)',
-            300: 'var(--primary-300)',
-            400: 'var(--primary-400)',
-            500: 'var(--primary-500)',
-            600: 'var(--primary-600)',
-            700: 'var(--primary-700)',
-            800: 'var(--primary-800)',
-            900: 'var(--primary-900)',
-            1000: 'var(--primary-1000)',
+              100 : '#d1e9ff',
+              200 : '#add8ff',
+              300 : '#8ac6ff',
+              400 : '#66b5ff',
+              500 : '#42a4ff',
+              600 : '#1f93ff',
+              700 : '#0081fa',
+              800 : '#006fd6',
+              900 : '#005cb3',
             },
 }`
-
-  const CSS_COLORS = `:root{
-  --primary: #42a4ff;
-  --primary-100: #d1e9ff;
-  --primary-200: #add8ff;
-  --primary-300: #8ac6ff;
-  --primary-400: #66b5ff;
-  --primary-500: #42a4ff;
-  --primary-600: #1f93ff;
-  --primary-700: #0081fa;
-  --primary-800: #006fd6;
-  --primary-900: #005cb3;
-  --primary-1000: #004a8f;
-  }`
 
   return (
     <>
@@ -59,24 +43,28 @@ export default function Documentation() {
             Tailwind Colors
           </h3>
           <p>
-            To use the colors dynamically, add the following properties to the
+            You can use the tailwind colors dynamically, add the following
+            properties to the
             <span className="mx-1 rounded-xl bg-slate-800 px-2 py-0.5 text-primary-100">
               tailwind.config
             </span>
             file.
+          </p>
+          <p>
+            If you want more custom colors you can visit
+            <a
+              href="https://tailwind-palete.vercel.app/"
+              target="_BLANK"
+              className="mx-1 rounded-xl bg-slate-800 px-2 py-0.5 text-primary-100"
+            >
+              tailwind Palete
+            </a>
           </p>
         </div>
         <div className="py-5">
           <CodeBlock code={TAILWIND_COLORS} />
         </div>
 
-        <div className="py-5">
-          <p className="pt-2">
-            In the global CSS file, create variables for the Primary and
-            Secondary colors.
-          </p>
-          <CodeBlock language={'css'} code={CSS_COLORS} />
-        </div>
         <Consistency />
       </div>
     </>
@@ -110,7 +98,7 @@ function Consistency() {
           <p>
             Create and add to your project a file named
             <span className="mx-1 rounded-xl bg-slate-800 px-2 py-0.5 text-primary-100">
-              prettier.
+              .prettier
             </span>
             and paste this code inside.
           </p>
