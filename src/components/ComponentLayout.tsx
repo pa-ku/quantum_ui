@@ -23,7 +23,7 @@ export default function ComponentLayout({
   return (
     <>
       <section className="relative flex h-full w-full items-start justify-center px-2">
-        <div className="flex w-full flex-col gap-10 xl:w-1/2">
+        <div className="flex w-full flex-col gap-10 xl:w-[50em]">
           <span className="space-y-2 px-2 md:p-0">
             <div className="flex gap-2">
               <h2 className="title">{title}</h2>

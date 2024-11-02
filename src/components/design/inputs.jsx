@@ -39,3 +39,38 @@ export const INPUT_SEARCH = (
     </button>
   </div>
 )
+
+export const INPUT_FILE = (
+  <>
+    <label className="just-center relative flex cursor-cell items-center gap-2 bg-gray-800 px-8 py-4 font-bold text-emerald-500 hover:bg-gray-700">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        className="pointer-events-none"
+        width="32"
+        height="32"
+        strokeWidth="2"
+      >
+        <path d="M15 8h.01"></path>
+        <path d="M12.5 21h-6.5a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v6.5"></path>
+        <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l4 4"></path>
+        <path d="M14 14l1 -1c.67 -.644 1.45 -.824 2.182 -.54"></path>
+        <path d="M16 19h6"></path> <path d="M19 16v6"></path>
+      </svg>
+      Add Image
+      <input className="pointer-events-none absolute opacity-0" type="file" />
+    </label>
+  </>
+)
+export const INPUT_SOUND = (
+  <>
+    <input
+      className="w-48 appearance-none rounded-xl border-2 border-gray-700 bg-gray-800"
+      type="range"
+    />
+  </>
+)
+export const INPUT_SOUND_CSS = `input[type='range']::-webkit-slider-thumb {
+  @apply size-5 cursor-pointer appearance-none rounded-full bg-emerald-500;
+}`

@@ -425,3 +425,7 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
   }
 }
+
+input[type='range']::-webkit-slider-thumb {
+  @apply size-5 cursor-pointer appearance-none rounded-full bg-emerald-500;
+}
