@@ -12,7 +12,7 @@ className="absolute left-0 right-0 m-auto space-y-6 rounded-xl bg-gray-700 p-5"
   </button>
   <button
     onClick={closeModal}
-    className="w-20 rounded-xl bg-primary px-3 py-2 hover:brightness-110"
+    className="w-20 rounded-xl bg-emerald-500 px-3 py-2 hover:brightness-110"
   >
     Yes
   </button>

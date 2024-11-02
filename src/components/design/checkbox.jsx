@@ -4,7 +4,7 @@ export const CHECK_ACTIVE = (
       type="checkbox"
       className="peer absolute h-full w-full cursor-pointer appearance-none"
     />
-    <p className="pointer-events-none rounded-xl bg-gray-600 px-4 py-2 font-bold peer-checked:bg-primary">
+    <p className="pointer-events-none rounded-xl bg-gray-600 px-4 py-2 font-bold peer-checked:bg-emerald-500">
       Checkbox
     </p>
   </div>
@@ -13,7 +13,7 @@ export const CHECK_ACTIVE = (
 export const CHECK_HEARTH = (
   <label
     htmlFor="favorite"
-    className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-primary p-0"
+    className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-emerald-500 p-0"
   >
     <input
       id="favorite"
@@ -21,7 +21,7 @@ export const CHECK_HEARTH = (
       type="checkbox"
     />
     <svg
-      className="h-full w-full text-transparent duration-200 peer-checked:text-primary"
+      className="h-full w-full text-transparent duration-200 peer-checked:text-emerald-500"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       fill="currentColor"
@@ -36,7 +36,7 @@ export const CHECK_PLUS = (
   <input
     content="✖"
     type="checkbox"
-    className="relative flex h-9 w-9 appearance-none items-center justify-center text-4xl before:absolute before:h-max before:w-max before:-rotate-45 before:cursor-pointer before:px-4 before:py-2 before:duration-200 before:content-[attr(content)] checked:before:rotate-0 checked:before:text-primary"
+    className="relative flex h-9 w-9 appearance-none items-center justify-center text-4xl before:absolute before:h-max before:w-max before:-rotate-45 before:cursor-pointer before:px-4 before:py-2 before:duration-200 before:content-[attr(content)] checked:before:rotate-0 checked:before:text-emerald-500"
   />
 )
 
@@ -62,6 +62,6 @@ export const CHECK_THEME = (
 export const CHECK_TOGGLE = (
   <input
     type="checkbox"
-    className="relative flex h-6 w-12 cursor-pointer appearance-none items-center rounded-xl bg-white duration-200 before:pointer-events-none before:absolute before:h-4 before:w-4 before:translate-x-1 before:rounded-xl before:bg-primary before:duration-200 checked:bg-primary checked:before:translate-x-7 checked:before:bg-white"
+    className="relative flex h-6 w-12 cursor-pointer appearance-none items-center rounded-xl bg-white duration-200 before:pointer-events-none before:absolute before:h-4 before:w-4 before:translate-x-1 before:rounded-xl before:bg-emerald-500 before:duration-200 checked:bg-emerald-500 checked:before:translate-x-7 checked:before:bg-white"
   />
 )

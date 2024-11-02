@@ -4,6 +4,7 @@ import ComponentTitle from '../components/ComponentTitle'
 import {
   BUTTON_ACTION,
   BUTTON_GLOW,
+  BUTTON_MINIMAL,
   BUTTON_NEON,
   BUTTON_SLICK,
   BUTTON_SLICK_CSS,
@@ -14,8 +15,13 @@ export default function Buttons() {
     <>
       <ComponentTitle>Buttons</ComponentTitle>
       <ComponentLayout
-        component={BUTTON_NEON}
-        title="Neon"
+        component={BUTTON_MINIMAL}
+        title="Minimal"
+        description=""
+      ></ComponentLayout>
+      <ComponentLayout
+        component={BUTTON_GLOW}
+        title="Glow"
         description=""
       ></ComponentLayout>
       <ComponentLayout
@@ -25,10 +31,11 @@ export default function Buttons() {
         css={BUTTON_SLICK_CSS}
       ></ComponentLayout>
       <ComponentLayout
-        component={BUTTON_GLOW}
-        title="Glow"
+        component={BUTTON_NEON}
+        title="Neon"
         description=""
       ></ComponentLayout>
+
       <ComponentLayout
         component={BUTTON_ACTION}
         title="Action"

@@ -6,7 +6,7 @@ export const CARD_ACCENT = (
         alt=""
       />
     </div>
-    <span className="animate-rotate absolute -z-10 h-80 w-80 rounded-full bg-gradient-to-r from-primary to-secundary"></span>
+    <span className="animate-rotate absolute -z-10 h-80 w-80 rounded-full bg-gradient-to-r from-emerald-500 to-violet-500"></span>
   </div>
 )
 export const CARD_ACCENT_CSS = `.animate-rotate{
@@ -24,7 +24,7 @@ export const CARD_PRODUCT = (
     <div className="rounded-t-lg border-b-2 bg-white">
       <span
         aria-label="Descuento"
-        className="absolute right-0 rounded-bl-lg rounded-tr-lg bg-primary px-3 text-xl "
+        className="absolute right-0 rounded-bl-lg rounded-tr-lg bg-emerald-500 px-3 text-xl "
       >
         -33%
       </span>
@@ -56,7 +56,7 @@ export const CARD_SHOWCASE = (
       alt=""
     />
     <figcaption className="p-4">
-      <h2 className="text-start text-xl font-bold uppercase text-primary">
+      <h2 className="text-start text-xl font-bold uppercase text-emerald-500">
         Bariloche
       </h2>
       <p className="text-white">

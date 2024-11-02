@@ -1,9 +1,15 @@
+export const BUTTON_MINIMAL = (
+  <button className="border-2 px-8 py-4 font-bold hover:bg-white hover:text-gray-700">
+    Learn more
+  </button>
+)
+
 export const BUTTON_NEON = (
   <button className="group relative flex h-max w-max items-center justify-center overflow-hidden rounded-xl bg-gray-800 p-0.5 mix-blend-lighten">
-    <div className="flex h-full w-full items-center justify-center rounded-xl bg-slate-700 px-8 py-4">
-      <p className="text-xl text-primary duration-500">Register</p>
-    </div>
-    <span className="animate-rotate absolute -z-10 h-52 w-11 animate-spin rounded-full bg-gradient-to-r duration-500 group-hover:from-primary"></span>
+    <p className="flex h-full w-full items-center justify-center rounded-xl bg-slate-700 px-8 py-4 text-xl text-emerald-500 duration-500">
+      Register
+    </p>
+    <span className="animate-rotate absolute -z-10 h-52 w-11 animate-spin rounded-full bg-gradient-to-r duration-500 group-hover:from-emerald-500"></span>
   </button>
 )
 
@@ -42,17 +48,15 @@ export const BUTTON_SLICK_CSS = `@property --color-1 {
 
 export const BUTTON_GLOW = (
   <button className="group relative flex h-max w-max items-center justify-center overflow-hidden rounded-xl bg-gray-800 p-0.5 mix-blend-lighten">
-    <div className="flex h-full w-full items-center justify-center rounded-xl bg-slate-700 px-8 py-4">
-      <p className="text-xl text-primary duration-500 group-hover:text-secundary">
-        Login
-      </p>
-    </div>
-    <span className="animate-rotate absolute -z-10 size-48 animate-spin rounded-full bg-gradient-to-r duration-300 group-hover:from-primary group-hover:to-secundary"></span>
+    <p className="h-full w-full rounded-xl bg-slate-700 px-8 py-4 text-xl text-emerald-500 duration-300 group-hover:text-emerald-300">
+      Login
+    </p>
+    <span className="animate-rotate absolute -z-10 size-48 animate-spin rounded-full bg-gradient-to-r duration-300 group-hover:from-emerald-500 group-hover:to-violet-500"></span>
   </button>
 )
 
 export const BUTTON_ACTION = (
-  <button className="rounded-md bg-slate-700 px-8 py-3 text-xl text-primary duration-100 [box-shadow:0px_0.25em_#212c3b] active:translate-y-1 active:shadow-none">
+  <button className="rounded-md bg-slate-700 px-8 py-3 text-xl text-emerald-500 duration-100 [box-shadow:0px_0.25em_#212c3b] active:translate-y-1 active:shadow-none">
     Press
   </button>
 )
