@@ -8,7 +8,7 @@ export default function ComponentTitle({ children, description }: TitleTypes) {
   return (
     <>
       <div className="space-y-4">
-        <h2 className="text-5xl text-center font-normal uppercase text-primary-200">
+        <h2 className="text-center text-5xl font-normal uppercase text-primary-200">
           {children}
         </h2>
         {description && (

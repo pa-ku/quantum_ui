@@ -1,11 +1,34 @@
-export const CHECK_ACTIVE = (
-  <div className="relative flex w-fit items-center justify-center">
+export const CHECK_DASHED = (
+  <div className="relative">
     <input
       type="checkbox"
       className="peer absolute h-full w-full cursor-pointer appearance-none"
     />
-    <p className="pointer-events-none rounded-xl bg-gray-600 px-4 py-2 font-bold peer-checked:bg-emerald-500">
-      Checkbox
+    <p className="rounded-lg border-2 border-dashed px-4 py-2 font-bold peer-checked:bg-white peer-checked:text-black">
+      Sound
+    </p>
+  </div>
+)
+export const CHECK_MINIMAL = (
+  <div className="relative">
+    <input
+      type="checkbox"
+      className="peer absolute h-full w-full cursor-pointer appearance-none"
+    />
+    <p className="border-2 px-4 py-2 peer-checked:bg-white peer-checked:text-black">
+      Switch Off
+    </p>
+  </div>
+)
+
+export const CHECK_ACTIVE = (
+  <div className="relative">
+    <input
+      type="checkbox"
+      className="peer absolute h-full w-full cursor-pointer appearance-none"
+    />
+    <p className="rounded-lg bg-gray-600 px-4 py-2 peer-checked:bg-emerald-500">
+      Activate
     </p>
   </div>
 )
@@ -13,15 +36,15 @@ export const CHECK_ACTIVE = (
 export const CHECK_HEARTH = (
   <label
     htmlFor="favorite"
-    className="relative m-0 flex h-10 w-10 cursor-pointer items-center justify-center stroke-emerald-500 p-0"
+    className="relative size-10 cursor-pointer stroke-emerald-500"
   >
     <input
       id="favorite"
-      className="peer absolute appearance-none opacity-0"
+      className="peer absolute appearance-none"
       type="checkbox"
     />
     <svg
-      className="h-full w-full text-transparent duration-200 peer-checked:text-emerald-500"
+      className="text-transparent duration-200 peer-checked:text-emerald-300"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       fill="currentColor"
@@ -41,20 +64,20 @@ export const CHECK_PLUS = (
 )
 
 export const CHECK_THEME = (
-  <div className="relative flex w-max items-center justify-center">
+  <div className="relative flex">
     <input
       type="checkbox"
       className="peer h-10 w-10 cursor-pointer appearance-none"
     />
     <img
-      className="pointer-events-none absolute h-full w-full opacity-100 invert duration-300 peer-checked:rotate-180 peer-checked:opacity-0"
+      className="pointer-events-none absolute invert duration-300 peer-checked:rotate-180 peer-checked:opacity-0"
       src="https://cdn.icon-icons.com/icons2/1325/PNG/512/fun4x_86984.png"
-      alt=""
+      alt="Sun Icon"
     />
     <img
-      className="pointer-events-none absolute h-full w-full -rotate-180 opacity-0 invert duration-300 peer-checked:rotate-0 peer-checked:opacity-100"
+      className="pointer-events-none absolute -rotate-180 opacity-0 invert duration-300 peer-checked:rotate-0 peer-checked:opacity-100"
       src="https://cdn.icon-icons.com/icons2/3255/PNG/512/moon_stars_weather_night_icon_205756.png"
-      alt=""
+      alt="Moon Icon"
     />
   </div>
 )

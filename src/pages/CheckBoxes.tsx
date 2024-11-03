@@ -2,7 +2,9 @@ import React from 'react'
 import ComponentTitle from '../components/ComponentTitle'
 import {
   CHECK_ACTIVE,
+  CHECK_DASHED,
   CHECK_HEARTH,
+  CHECK_MINIMAL,
   CHECK_PLUS,
   CHECK_THEME,
   CHECK_TOGGLE,
@@ -18,11 +20,25 @@ export default function CheckBoxes() {
       >
         CheckBoxes
       </ComponentTitle>
-
+      <ComponentLayout
+        component={CHECK_TOGGLE}
+        title="Toggle"
+        description=""
+      ></ComponentLayout>
+      <ComponentLayout
+        component={CHECK_DASHED}
+        title="Dashed"
+        description=""
+      ></ComponentLayout>
+      <ComponentLayout
+        component={CHECK_MINIMAL}
+        title="Minimal"
+        description=""
+      ></ComponentLayout>
       <ComponentLayout
         component={CHECK_ACTIVE}
         title="Active"
-        description="Showcasing the selling item, you have the option to automaticly calculate the discount label."
+        description=""
       ></ComponentLayout>
       <ComponentLayout
         component={CHECK_HEARTH}
@@ -37,13 +53,7 @@ export default function CheckBoxes() {
       <ComponentLayout
         component={CHECK_THEME}
         title="Theme"
-        description="Showcasing the selling item, you have the option to automaticly calculate the discount label."
-      ></ComponentLayout>
-
-      <ComponentLayout
-        component={CHECK_TOGGLE}
-        title="Toggle"
-        description="Showcasing the selling item, you have the option to automaticly calculate the discount label."
+        description=""
       ></ComponentLayout>
     </>
   )

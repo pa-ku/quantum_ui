@@ -3,11 +3,10 @@ import jsxToString from 'react-element-to-jsx-string'
 import CodeBlock from './CodeBlock'
 
 type ComponentTypes = {
-  children: any
   title: string
   text?: string | ReactNode
   description?: string
-  component: Element
+  component: ReactNode
   css?: string
 }
 export default function ComponentLayout({
