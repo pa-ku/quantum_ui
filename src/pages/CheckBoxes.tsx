@@ -10,7 +10,7 @@ export default function CheckBoxes() {
     { title: 'Minimal', component: CHECK_MINIMAL, description: '' },
     { title: 'Active', component: CHECK_ACTIVE, description: '' },
     { title: 'Menu', component: CHECK_MENU, description: '' },
-    { title: 'Hearth', component: CHECK_HEARTH, description: '' },
+    { title: 'Heart', component: CHECK_HEARTH, description: '' },
     { title: 'Plus', component: CHECK_PLUS, description: '' },
     { title: 'Theme', component: CHECK_THEME, description: '' },
   ]
