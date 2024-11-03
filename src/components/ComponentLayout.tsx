@@ -27,7 +27,7 @@ export default function ComponentLayout({
             <div className="flex gap-2">
               <h2 className="title">{title}</h2>
               <button
-                className="group flex items-center justify-center rounded-full stroke-primary-300 p-2 text-xl text-primary-300 hover:bg-gray-800"
+                className="group flex items-center justify-center rounded-full stroke-primary-300 p-1 text-xl text-primary-300 hover:bg-gray-800"
                 onClick={() => setShowCode(!showCode)}
                 title="show code"
               >
