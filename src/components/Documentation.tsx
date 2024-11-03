@@ -96,7 +96,7 @@ function Consistency() {
         </div>
         <div className="space-y-2">
           <p>
-            Create and add to your project a file named
+            Add to your project a file named
             <span className="mx-1 rounded-xl bg-slate-800 px-2 py-0.5 text-primary-100">
               .prettier
             </span>
