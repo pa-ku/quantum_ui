@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Monserrat';
+  src: url('../src/assets/fonts/Montserrat-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('../src/assets/fonts/Montserrat-Bold.woff2');
+  font-weight: 800;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,18 +40,6 @@
   --color-2: var(--primary);
 }
 
-@font-face {
-  font-family: 'Monserrat';
-  src: url('../src/assets/fonts/Montserrat-Regular.woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Monserrat';
-  src: url('../src/assets/fonts/Montserrat-Bold.woff2');
-  font-weight: 800;
-}
-
 *,
 *::before,
 *::after {
@@ -49,8 +49,7 @@
 
 body {
   background-color: var(--background);
-  font-family: 'Monserrat';
-  background-color: linear-gradient(to bottom '#fff', '#fff');
+  font-family: 'Monserrat', sans-serif;
 }
 /* 091713 */
 :root {
