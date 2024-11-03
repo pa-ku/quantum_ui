@@ -1,3 +1,16 @@
+export const CHECK_FILL = (
+  <label className="relative cursor-pointer overflow-hidden rounded-full [&_*]:rounded-full">
+    <input
+      className="peer absolute appearance-none font-bold"
+      type="checkbox"
+    />
+    <p className="border-2 px-5 py-2 duration-500 peer-checked:text-black">
+      Stay Calm
+    </p>
+    <span className="absolute right-full top-0 -z-10 h-full w-full bg-white duration-500 ease-out peer-checked:right-0"></span>
+  </label>
+)
+
 export const CHECK_DASHED = (
   <div className="relative">
     <input

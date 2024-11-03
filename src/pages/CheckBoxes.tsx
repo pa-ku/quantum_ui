@@ -3,6 +3,7 @@ import ComponentTitle from '../components/ComponentTitle'
 import {
   CHECK_ACTIVE,
   CHECK_DASHED,
+  CHECK_FILL,
   CHECK_HEARTH,
   CHECK_MINIMAL,
   CHECK_PLUS,
@@ -20,6 +21,11 @@ export default function CheckBoxes() {
       >
         CheckBoxes
       </ComponentTitle>
+      <ComponentLayout
+        component={CHECK_FILL}
+        title="Fill"
+        description=""
+      ></ComponentLayout>
       <ComponentLayout
         component={CHECK_TOGGLE}
         title="Toggle"
