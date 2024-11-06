@@ -17,7 +17,7 @@ export default function BentoBox() {
         </div>
         <div className="box relative row-span-2 h-full w-full">
           <div className="content h-full w-full">
-            <BoltIcon className="size-24"></BoltIcon>
+            <BoltIcon className="size-20 md:size-32"></BoltIcon>
             <p className="absolute left-0 w-full text-center text-xl [writing-mode:vertical-lr] md:text-2xl">
               Fast animations
             </p>

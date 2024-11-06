@@ -19,8 +19,8 @@ export default function Documentation() {
 
   return (
     <>
-      <div className="space-y-10">
-        <span className="space-y-3">
+      <div className="flex flex-col flex-wrap gap-10">
+        <div className="space-y-3">
           <h2 className="text-start text-4xl font-bold">
             Being Quantum is Easy
           </h2>
@@ -36,7 +36,7 @@ export default function Documentation() {
             installed. A framework is not required <br /> but you'll need to
             change className to class for CSS properties.
           </p>
-        </span>
+        </div>
 
         <div className="space-y-2">
           <h3 className="text-2xl font-bold text-secundary-300">
@@ -56,9 +56,9 @@ export default function Documentation() {
               tailwind Palete
             </a>
           </p>
-        </div>
         <div className="py-5">
           <CodeBlock code={TAILWIND_COLORS} />
+        </div>
         </div>
 
         <div className="space-y-2">

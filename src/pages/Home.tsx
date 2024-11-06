@@ -5,13 +5,10 @@ import Banner from '../components/home/Banner'
 export default function Home() {
   return (
     <>
-      <main className="relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-4 py-10 lg:overflow-visible xl:w-1/2">
+      <main className="relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-3 py-10 lg:overflow-visible lg:w-[45em]">
         <Banner />
-
         <BentoBox />
- 
-          <Documentation />
-   
+        <Documentation />
       </main>
     </>
   )
