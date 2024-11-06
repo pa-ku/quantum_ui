@@ -36,13 +36,11 @@ export default function BentoBox() {
             <p className="absolute bottom-2">Tailwind</p>
           </div>
         </div>
-
         <div className="box col-span-3">
           <div className="content md:text-1xl text-center text-2xl">
             Accesible oriented
           </div>
         </div>
-
         <span className="chroma"></span>
       </div>
     </>
