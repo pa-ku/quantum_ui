@@ -5,6 +5,7 @@ import ComponentLayout from '../components/ComponentLayout'
 export default function CheckBoxes() {
   const checkArr = [
     { title: 'Fill', component: CHECK_FILL, description: '' },
+    { title: 'Fill Top', component: CHECK_FILL_TOP, description: '' },
     { title: 'Toggle', component: CHECK_TOGGLE, description: '' },
     { title: 'Dashed', component: CHECK_DASHED, description: '' },
     { title: 'Minimal', component: CHECK_MINIMAL, description: '' },
@@ -36,23 +37,15 @@ export default function CheckBoxes() {
 }
 
 const CHECK_MENU = (
-  <label className="relative flex items-center gap-1 px-1">
+  <label className="relative cursor-pointer overflow-hidden rounded-full [&_*]:rounded-full">
     <input
+      className="peer absolute appearance-none font-bold"
       type="checkbox"
-      className="group peer absolute h-full w-full cursor-pointer appearance-none"
     />
-    <p className="">Open Menu</p>
-    <svg
-      className="size-7 duration-300 peer-checked:-rotate-180"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-    >
-      <path d="M6 9l6 6l6 -6"></path>
-    </svg>
+    <p className="relative z-10 border-2 px-5 py-2 duration-500 peer-checked:text-black">
+      Stay Calm
+    </p>
+    <span className="absolute right-full top-0 h-full w-full bg-white duration-500 ease-out peer-checked:right-0" />
   </label>
 )
 
@@ -62,10 +55,22 @@ const CHECK_FILL = (
       className="peer absolute appearance-none font-bold"
       type="checkbox"
     />
-    <p className="border-2 px-5 py-2 duration-500 peer-checked:text-black">
+    <p className="relative z-10 border-2 px-5 py-2 duration-500 peer-checked:text-black">
       Stay Calm
     </p>
-    <span className="absolute right-full top-0 -z-10 h-full w-full bg-white duration-500 ease-out peer-checked:right-0"></span>
+    <span className="absolute right-full top-0 h-full w-full bg-white duration-500 ease-out peer-checked:right-0" />
+  </label>
+)
+const CHECK_FILL_TOP = (
+  <label className="relative cursor-pointer overflow-hidden rounded-full [&_*]:rounded-full">
+    <input
+      className="peer absolute appearance-none font-bold"
+      type="checkbox"
+    />
+    <p className="relative z-10 border-2 px-5 py-2 duration-500 peer-checked:text-black">
+      Stay Calm
+    </p>
+    <span className="absolute top-full h-full w-full bg-white duration-500 ease-out peer-checked:top-0" />
   </label>
 )
 
